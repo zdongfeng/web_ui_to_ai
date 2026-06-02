@@ -1,0 +1,37 @@
+pattern:
+  id: management-list
+  register: product
+  purpose: "Manage, filter, inspect, and act on a collection of records"
+  layout:
+    default_structure: sidebar-content
+    density: compact
+  required_regions:
+    - page-header
+    - filter-toolbar
+    - data-table
+    - pagination
+  optional_regions:
+    - bulk-actions
+    - detail-drawer
+    - saved-views
+  components:
+    recommended:
+      - search-input
+      - select
+      - table
+      - badge
+      - pagination
+      - drawer
+      - button
+  usage:
+    use_when:
+      - "Users need to work with many records"
+      - "Filtering and inspection are central to the workflow"
+    avoid_when:
+      - "The collection has fewer than five items and no comparison need"
+      - "The page is meant to persuade rather than operate"
+  avoid:
+    - "card grid for dense records"
+    - "hero metrics"
+    - "large decorative panels"
+

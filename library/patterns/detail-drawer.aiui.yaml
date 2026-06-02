@@ -1,0 +1,34 @@
+pattern:
+  id: detail-drawer
+  register: product
+  purpose: "Show detail or secondary edits without leaving the current context"
+  layout:
+    default_structure: side-panel
+    density: medium
+  required_regions:
+    - drawer-header
+    - drawer-content
+  optional_regions:
+    - drawer-actions
+    - activity-list
+    - related-records
+  components:
+    recommended:
+      - drawer
+      - button
+      - icon-button
+      - badge
+      - form-field
+      - toast
+  usage:
+    use_when:
+      - "Users need to inspect a record from a list"
+      - "Context should remain visible behind the detail view"
+    avoid_when:
+      - "The flow is complex enough to deserve a full page"
+      - "The detail content is too wide for a side panel"
+  avoid:
+    - "nested drawers"
+    - "using drawer for every action"
+    - "hiding primary workflows inside temporary UI"
+

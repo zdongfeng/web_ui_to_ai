@@ -1,0 +1,46 @@
+page:
+  id: order-management
+  type: management-list
+  register: product
+  primary_user: operations-user
+  goal: "Find, filter, inspect, and update orders"
+
+brand_profile: precise-product-ui
+
+layout:
+  structure: sidebar-content
+  density: compact
+
+patterns:
+  required:
+    - app-shell
+    - management-list
+    - data-table-workspace
+  optional:
+    - detail-drawer
+
+regions:
+  required:
+    - page-header
+    - filter-toolbar
+    - data-table
+    - pagination
+  optional:
+    - bulk-actions
+    - detail-drawer
+
+components:
+  recommended:
+    - search-input
+    - select
+    - table
+    - badge
+    - pagination
+    - drawer
+
+avoid:
+  - "landing page structure"
+  - "hero metrics"
+  - "large decorative cards"
+  - "generic gradient background"
+

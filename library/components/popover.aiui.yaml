@@ -1,0 +1,24 @@
+component:
+  id: popover
+  category: overlay
+  purpose: "Show short contextual controls or information"
+  variants:
+    - menu
+    - filter
+    - info
+  sizes:
+    - sm
+    - md
+  states:
+    - open
+    - closed
+  usage:
+    preferred:
+      - "compact menus"
+      - "date filters"
+      - "small contextual panels"
+    avoid:
+      - "large forms"
+      - "critical confirmations"
+      - "content that must remain visible"
+

@@ -1,0 +1,23 @@
+component:
+  id: switch
+  category: form
+  purpose: "Toggle a binary setting"
+  variants:
+    - default
+  sizes:
+    - sm
+    - md
+  states:
+    - off
+    - on
+    - disabled
+    - focus
+  usage:
+    preferred:
+      - "settings pages"
+      - "feature toggles"
+      - "preferences with immediate effect"
+    avoid:
+      - "actions that require confirmation"
+      - "binary choices that need explanatory labels on both options"
+

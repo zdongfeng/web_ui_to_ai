@@ -1,0 +1,25 @@
+component:
+  id: search-input
+  category: form
+  purpose: "Search or filter a collection"
+  variants:
+    - compact
+    - toolbar
+    - prominent
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - focus
+    - disabled
+    - loading
+  usage:
+    preferred:
+      - "filter toolbar"
+      - "command-like search"
+      - "management list pages"
+    avoid:
+      - "placing search far from the collection it filters"
+      - "using prominent search when the page's primary task is not search"
+

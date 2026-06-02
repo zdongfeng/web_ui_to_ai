@@ -1,0 +1,24 @@
+component:
+  id: form-field
+  category: form
+  purpose: "Group a label, control, description, and error message"
+  variants:
+    - vertical
+    - horizontal
+    - inline
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - error
+    - disabled
+  usage:
+    preferred:
+      - "settings forms"
+      - "auth forms"
+      - "structured edit panels"
+    avoid:
+      - "placeholder-only labels"
+      - "separating errors from their controls"
+

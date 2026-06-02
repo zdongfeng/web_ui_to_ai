@@ -1,0 +1,23 @@
+component:
+  id: section-header
+  category: structure
+  purpose: "Introduce a section with title, optional description, and actions"
+  variants:
+    - compact
+    - standard
+    - editorial
+  sizes:
+    - sm
+    - md
+    - lg
+  states:
+    - default
+  usage:
+    preferred:
+      - "settings sections"
+      - "dashboard groups"
+      - "landing sections"
+    avoid:
+      - "repeating the same title and description"
+      - "hero-scale headings inside compact product regions"
+

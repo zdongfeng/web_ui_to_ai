@@ -1,0 +1,38 @@
+brand_profile:
+  id: calm-saas
+  register: product
+  purpose: "Approachable SaaS interfaces for setup, settings, and everyday use"
+  density: medium
+  color_strategy: restrained-with-accent
+  surface_style: soft
+  border_strategy: subtle
+  typography_character: clear-friendly
+  motion: light-feedback
+
+layout:
+  preferred:
+    - settings-nav-content
+    - centered-form
+    - summary-sections
+  spacing:
+    rhythm: comfortable
+    avoid_same_padding_everywhere: true
+
+visual_rules:
+  prefer:
+    - "clear grouped sections"
+    - "friendly but restrained accents"
+    - "forms with descriptions and validation"
+    - "soft surfaces only when grouping is useful"
+  avoid:
+    - "generic purple gradients"
+    - "excessive rounded cards"
+    - "too many decorative illustrations"
+    - "marketing hero inside app pages"
+
+copy:
+  tone: helpful
+  avoid:
+    - "vague reassurance"
+    - "long paragraphs inside settings"
+

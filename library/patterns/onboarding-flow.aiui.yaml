@@ -1,0 +1,34 @@
+pattern:
+  id: onboarding-flow
+  register: product
+  purpose: "Guide users through first setup or activation"
+  layout:
+    default_structure: guided-steps
+    density: medium
+  required_regions:
+    - progress-indicator
+    - step-content
+    - step-actions
+  optional_regions:
+    - preview
+    - helper-panel
+    - checklist
+  components:
+    recommended:
+      - button
+      - form-field
+      - input
+      - radio
+      - checkbox
+      - empty-state
+  usage:
+    use_when:
+      - "Users need a sequence to reach first value"
+      - "Skipping setup would cause confusion"
+    avoid_when:
+      - "The task is simple enough to happen inline"
+  avoid:
+    - "too many steps"
+    - "decorative progress without meaningful state"
+    - "blocking experienced users without reason"
+

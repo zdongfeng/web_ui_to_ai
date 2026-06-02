@@ -1,0 +1,39 @@
+brand_profile:
+  id: editorial-brand
+  register: brand
+  purpose: "Brand-led pages where design communicates the product's point of view"
+  density: open
+  color_strategy: committed
+  surface_style: content-first
+  border_strategy: minimal
+  typography_character: expressive
+  motion: selective
+
+layout:
+  preferred:
+    - landing-flow
+    - split-narrative
+    - proof-led-sections
+  spacing:
+    rhythm: varied
+    avoid_same_padding_everywhere: true
+
+visual_rules:
+  prefer:
+    - "specific product proof"
+    - "strong typographic hierarchy"
+    - "clear narrative sequence"
+    - "visual assets that reveal the product or workflow"
+  avoid:
+    - "identical card grids"
+    - "hero metric template"
+    - "stock SaaS layout"
+    - "generic AI purple gradients"
+    - "fake dashboard screenshots"
+
+copy:
+  tone: specific
+  avoid:
+    - "AI buzzword stacking"
+    - "generic claims without proof"
+

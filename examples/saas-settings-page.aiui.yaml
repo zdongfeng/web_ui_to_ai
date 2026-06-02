@@ -1,0 +1,43 @@
+page:
+  id: saas-settings
+  type: settings
+  register: product
+  primary_user: workspace-admin
+  goal: "Review and update workspace configuration"
+
+brand_profile: calm-saas
+
+layout:
+  structure: settings-nav-content
+  density: medium
+
+patterns:
+  required:
+    - app-shell
+    - settings-section
+  optional:
+    - billing-overview
+
+regions:
+  required:
+    - page-header
+    - settings-navigation
+    - settings-section-list
+  optional:
+    - danger-zone
+
+components:
+  recommended:
+    - tabs
+    - form-field
+    - input
+    - select
+    - switch
+    - button
+
+avoid:
+  - "marketing hero"
+  - "large unrelated stats"
+  - "modal-first editing"
+  - "decorative feature cards"
+

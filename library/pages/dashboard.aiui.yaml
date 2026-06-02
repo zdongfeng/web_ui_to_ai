@@ -1,0 +1,53 @@
+page:
+  id: dashboard
+  type: dashboard
+  register: product
+  primary_user: product-operator
+  goal: "Understand current system state and find work that needs attention"
+
+brand_profile: precise-product-ui
+
+layout:
+  structure: sidebar-content
+  density: compact
+
+patterns:
+  required:
+    - app-shell
+  optional:
+    - management-list
+    - data-table-workspace
+
+regions:
+  required:
+    - page-header
+    - summary-strip
+    - primary-work-list
+    - activity-section
+  optional:
+    - alerts
+    - quick-actions
+
+components:
+  recommended:
+    - section-header
+    - badge
+    - table
+    - button
+    - empty-state
+
+content_requirements:
+  summary_items:
+    - active-work
+    - blocked-items
+    - recent-changes
+  primary_actions:
+    - review-alerts
+    - open-work-list
+
+avoid:
+  - "decorative metrics without actions"
+  - "hero metric template"
+  - "chart clutter"
+  - "marketing layout"
+

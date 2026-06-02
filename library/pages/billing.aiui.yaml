@@ -1,0 +1,55 @@
+page:
+  id: billing
+  type: billing
+  register: product
+  primary_user: workspace-admin
+  goal: "Understand subscription state, payment method, usage, and invoices"
+
+brand_profile: calm-saas
+
+layout:
+  structure: settings-nav-content
+  density: medium
+
+patterns:
+  required:
+    - app-shell
+    - billing-overview
+  optional:
+    - settings-section
+
+regions:
+  required:
+    - page-header
+    - plan-summary
+    - payment-method
+    - invoice-list
+  optional:
+    - usage-summary
+    - upgrade-action
+    - billing-contact
+
+components:
+  recommended:
+    - section-header
+    - badge
+    - table
+    - button
+    - form-field
+
+content_requirements:
+  billing_items:
+    - current-plan
+    - billing-email
+    - payment-method
+    - invoices
+  primary_actions:
+    - update-plan
+    - update-payment-method
+
+avoid:
+  - "public pricing page layout"
+  - "fake savings metrics"
+  - "unclear destructive billing actions"
+  - "decorative plan cards without operational details"
+

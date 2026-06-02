@@ -1,0 +1,32 @@
+pattern:
+  id: auth-form
+  register: product
+  purpose: "Authenticate users through a focused form"
+  layout:
+    default_structure: centered-form
+    density: medium
+  required_regions:
+    - brand-mark
+    - form-header
+    - form-fields
+    - form-actions
+  optional_regions:
+    - secondary-link
+    - legal-note
+    - side-context
+  components:
+    recommended:
+      - form-field
+      - input
+      - button
+      - checkbox
+  usage:
+    use_when:
+      - "Users need to sign in, register, or recover access"
+    avoid_when:
+      - "The page needs complex product navigation"
+  avoid:
+    - "busy decorative background"
+    - "too many competing calls to action"
+    - "placeholder-only form labels"
+

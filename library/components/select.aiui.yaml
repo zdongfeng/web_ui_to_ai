@@ -1,0 +1,25 @@
+component:
+  id: select
+  category: form
+  purpose: "Choose one value from a bounded option set"
+  variants:
+    - default
+    - toolbar
+    - error
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - focus
+    - disabled
+    - error
+  usage:
+    preferred:
+      - "status filters"
+      - "settings values"
+      - "bounded categories"
+    avoid:
+      - "using select for very large searchable lists"
+      - "using select when a toggle or segmented control is clearer"
+

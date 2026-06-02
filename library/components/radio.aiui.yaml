@@ -1,0 +1,24 @@
+component:
+  id: radio
+  category: form
+  purpose: "Choose exactly one option from a small set"
+  variants:
+    - default
+    - card-option
+  sizes:
+    - sm
+    - md
+  states:
+    - unchecked
+    - checked
+    - disabled
+    - focus
+  usage:
+    preferred:
+      - "2 to 5 mutually exclusive options"
+      - "plan choice"
+      - "mode selection when options need descriptions"
+    avoid:
+      - "large option sets"
+      - "using radio where tabs are needed for visible content switching"
+

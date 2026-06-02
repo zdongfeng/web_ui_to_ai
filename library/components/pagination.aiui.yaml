@@ -1,0 +1,23 @@
+component:
+  id: pagination
+  category: navigation
+  purpose: "Move through paginated collections"
+  variants:
+    - compact
+    - full
+    - cursor
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - disabled
+  usage:
+    preferred:
+      - "tables"
+      - "large result sets"
+      - "management pages"
+    avoid:
+      - "small collections"
+      - "placing pagination far from the collection"
+

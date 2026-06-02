@@ -1,0 +1,25 @@
+component:
+  id: tabs
+  category: navigation
+  purpose: "Switch between related content sections at the same level"
+  variants:
+    - underline
+    - segmented
+    - sidebar
+  sizes:
+    - sm
+    - md
+  states:
+    - active
+    - inactive
+    - disabled
+  usage:
+    preferred:
+      - "settings sections"
+      - "workspace subviews"
+      - "content with parallel categories"
+    avoid:
+      - "deep navigation"
+      - "using tabs when content should be visible together"
+      - "too many tabs on narrow screens"
+

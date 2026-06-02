@@ -1,0 +1,35 @@
+project:
+  id: example-operations-product
+  name: Example Operations Product
+  register: product
+  primary_users:
+    - operations-user
+    - workspace-admin
+  product_goal: "Help teams manage operational records with clarity and speed"
+
+stack:
+  frontend: react-tailwind
+  adapter: react-tailwind
+
+style:
+  brand_profile: precise-product-ui
+  density: compact
+  color_strategy: restrained
+  surface_style: flat
+  border_strategy: subtle-lines
+  typography_character: precise
+  motion: minimal-functional
+
+rules:
+  prefer:
+    - "compact product UI"
+    - "clear hierarchy through spacing and typography"
+    - "tables for dense record management"
+    - "drawers for record inspection when context should remain visible"
+  avoid:
+    - "marketing hero sections in product screens"
+    - "generic gradient backgrounds"
+    - "large decorative cards"
+    - "glassmorphism as default"
+    - "identical icon-card grids"
+

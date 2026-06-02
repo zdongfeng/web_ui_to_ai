@@ -1,0 +1,39 @@
+brand_profile:
+  id: precise-product-ui
+  register: product
+  purpose: "Professional product interfaces for repeated operational work"
+  density: compact
+  color_strategy: restrained
+  surface_style: flat
+  border_strategy: subtle-lines
+  typography_character: precise
+  motion: minimal-functional
+
+layout:
+  preferred:
+    - sidebar-content
+    - toolbar-table-footer
+    - table-detail
+  spacing:
+    rhythm: compact-varied
+    avoid_same_padding_everywhere: true
+
+visual_rules:
+  prefer:
+    - "clear table and toolbar structures"
+    - "typography and spacing as hierarchy"
+    - "subtle borders instead of heavy shadows"
+    - "compact controls for repeated actions"
+  avoid:
+    - "heavy shadows"
+    - "decorative gradients"
+    - "oversized marketing sections"
+    - "large rounded cards for every region"
+    - "glassmorphism as default"
+
+copy:
+  tone: concise
+  avoid:
+    - "restating headings"
+    - "empty product marketing copy"
+

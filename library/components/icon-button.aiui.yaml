@@ -1,0 +1,25 @@
+component:
+  id: icon-button
+  category: action
+  purpose: "Trigger a compact action represented by a familiar icon"
+  variants:
+    - ghost
+    - subtle
+    - danger
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - hover
+    - focus
+    - disabled
+  usage:
+    preferred:
+      - "toolbar actions"
+      - "table row actions"
+      - "close, edit, delete, copy, download, refresh"
+    avoid:
+      - "unlabeled obscure actions without tooltip"
+      - "using icon-only actions for primary page actions"
+

@@ -1,0 +1,41 @@
+page:
+  id: ai-tool-landing
+  type: landing-page
+  register: brand
+  primary_user: technical-founder
+  goal: "Understand product value and start a trial"
+
+brand_profile: editorial-brand
+
+layout:
+  structure: landing-flow
+  density: open
+
+patterns:
+  required:
+    - landing-page
+  optional:
+    - pricing-summary
+    - faq-section
+
+regions:
+  required:
+    - hero
+    - product-proof
+    - workflow-section
+    - pricing-preview
+    - final-action
+
+components:
+  recommended:
+    - button
+    - badge
+    - section-header
+    - tabs
+
+avoid:
+  - "generic purple gradient hero"
+  - "identical icon-card grid"
+  - "empty AI buzzword copy"
+  - "fake dashboard screenshot"
+

@@ -1,0 +1,24 @@
+component:
+  id: empty-state
+  category: feedback
+  purpose: "Explain why content is missing and offer the next action"
+  variants:
+    - compact
+    - full
+    - inline
+  sizes:
+    - sm
+    - md
+    - lg
+  states:
+    - default
+  usage:
+    preferred:
+      - "empty tables"
+      - "first-run product areas"
+      - "filtered results with no matches"
+    avoid:
+      - "decorative illustrations without action"
+      - "generic copy"
+      - "oversized empty states in dense product pages"
+

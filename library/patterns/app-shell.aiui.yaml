@@ -1,0 +1,32 @@
+pattern:
+  id: app-shell
+  register: product
+  purpose: "Provide persistent navigation and a stable product workspace"
+  layout:
+    default_structure: sidebar-content
+    density: compact
+  required_regions:
+    - primary-navigation
+    - content-area
+  optional_regions:
+    - top-bar
+    - account-menu
+    - command-entry
+  components:
+    recommended:
+      - button
+      - icon-button
+      - tooltip
+      - badge
+  usage:
+    use_when:
+      - "The product has multiple persistent sections"
+      - "Users need repeated navigation between workflows"
+    avoid_when:
+      - "The page is a focused one-off flow"
+      - "The surface is a brand landing page"
+  avoid:
+    - "oversized navigation"
+    - "marketing hero inside the shell"
+    - "decorative sidebar gradients"
+

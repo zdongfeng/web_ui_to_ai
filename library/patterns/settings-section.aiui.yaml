@@ -1,0 +1,34 @@
+pattern:
+  id: settings-section
+  register: product
+  purpose: "Organize configurable product settings into clear groups"
+  layout:
+    default_structure: section-list
+    density: medium
+  required_regions:
+    - settings-navigation
+    - settings-section-list
+  optional_regions:
+    - danger-zone
+    - save-bar
+  components:
+    recommended:
+      - section-header
+      - form-field
+      - input
+      - select
+      - switch
+      - button
+      - tabs
+  usage:
+    use_when:
+      - "Users need to review or update product configuration"
+      - "Settings belong in related groups"
+    avoid_when:
+      - "The page is a one-step form"
+      - "The workflow requires guided onboarding"
+  avoid:
+    - "feature card grid"
+    - "marketing hero"
+    - "modal-first editing"
+

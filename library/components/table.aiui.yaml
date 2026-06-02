@@ -1,0 +1,25 @@
+component:
+  id: table
+  category: data
+  purpose: "Display dense comparable records"
+  variants:
+    - standard
+    - compact
+    - selectable
+  sizes:
+    - compact
+    - regular
+  states:
+    - loading
+    - empty
+    - error
+  usage:
+    preferred:
+      - "management lists"
+      - "record comparison"
+      - "operations dashboards"
+    avoid:
+      - "using cards for dense tabular data"
+      - "too many visual treatments per row"
+      - "unscannable columns without alignment"
+

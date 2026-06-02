@@ -1,0 +1,49 @@
+page:
+  id: login
+  type: auth-form
+  register: product
+  primary_user: returning-user
+  goal: "Authenticate and enter the product"
+
+brand_profile: calm-saas
+
+layout:
+  structure: centered-form
+  density: medium
+
+patterns:
+  required:
+    - auth-form
+
+regions:
+  required:
+    - brand-mark
+    - form-header
+    - form-fields
+    - form-actions
+  optional:
+    - secondary-link
+    - legal-note
+
+components:
+  recommended:
+    - form-field
+    - input
+    - button
+    - checkbox
+
+content_requirements:
+  fields:
+    - email
+    - password
+  primary_actions:
+    - sign-in
+  secondary_actions:
+    - forgot-password
+    - create-account
+
+avoid:
+  - "busy decorative background"
+  - "too many competing calls to action"
+  - "placeholder-only labels"
+

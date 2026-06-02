@@ -1,0 +1,34 @@
+pattern:
+  id: landing-page
+  register: brand
+  purpose: "Explain a product offer and move visitors toward action"
+  layout:
+    default_structure: landing-flow
+    density: open
+  required_regions:
+    - hero
+    - product-proof
+    - workflow-section
+    - final-action
+  optional_regions:
+    - pricing-preview
+    - faq-section
+    - testimonials
+  components:
+    recommended:
+      - button
+      - badge
+      - section-header
+      - tabs
+  usage:
+    use_when:
+      - "The page is a brand or acquisition surface"
+      - "The goal is understanding, trust, and conversion"
+    avoid_when:
+      - "The page is an internal product workflow"
+  avoid:
+    - "generic purple AI gradient"
+    - "identical icon-card grid"
+    - "fake dashboard screenshot"
+    - "empty buzzword copy"
+

@@ -1,0 +1,26 @@
+component:
+  id: input
+  category: form
+  purpose: "Collect short text or numeric values"
+  variants:
+    - default
+    - error
+    - disabled
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+    - focus
+    - disabled
+    - error
+  usage:
+    preferred:
+      - "forms"
+      - "settings rows"
+      - "filters with explicit labels"
+    avoid:
+      - "unlabeled inputs"
+      - "placeholder-only labels"
+      - "using text input where select or date control is clearer"
+

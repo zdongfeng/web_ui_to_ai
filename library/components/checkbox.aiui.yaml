@@ -1,0 +1,25 @@
+component:
+  id: checkbox
+  category: form
+  purpose: "Select one or more independent options"
+  variants:
+    - default
+    - indeterminate
+  sizes:
+    - sm
+    - md
+  states:
+    - unchecked
+    - checked
+    - indeterminate
+    - disabled
+    - focus
+  usage:
+    preferred:
+      - "bulk table selection"
+      - "multi-select option lists"
+      - "independent preferences"
+    avoid:
+      - "using checkbox for mutually exclusive options"
+      - "ambiguous labels"
+

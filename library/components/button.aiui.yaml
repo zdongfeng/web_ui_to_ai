@@ -1,0 +1,29 @@
+component:
+  id: button
+  category: action
+  purpose: "Trigger a clear user action"
+  variants:
+    - primary
+    - secondary
+    - ghost
+    - danger
+  sizes:
+    - sm
+    - md
+    - lg
+  states:
+    - default
+    - hover
+    - focus
+    - disabled
+    - loading
+  usage:
+    preferred:
+      - "primary form submission"
+      - "page-level action"
+      - "table row action when compact"
+    avoid:
+      - "multiple primary buttons in the same region"
+      - "using danger variant for non-destructive actions"
+      - "oversized buttons in dense product UI"
+

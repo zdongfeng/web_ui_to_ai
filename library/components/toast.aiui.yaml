@@ -1,0 +1,24 @@
+component:
+  id: toast
+  category: feedback
+  purpose: "Confirm transient system feedback"
+  variants:
+    - success
+    - info
+    - warning
+    - error
+  sizes:
+    - md
+  states:
+    - visible
+    - dismissed
+  usage:
+    preferred:
+      - "save confirmation"
+      - "background task result"
+      - "non-blocking feedback"
+    avoid:
+      - "critical decisions"
+      - "long text"
+      - "information users must reference later"
+

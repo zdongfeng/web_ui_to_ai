@@ -1,0 +1,22 @@
+component:
+  id: tooltip
+  category: feedback
+  purpose: "Explain an icon, control, or truncated label"
+  variants:
+    - default
+    - shortcut
+  sizes:
+    - sm
+  states:
+    - visible
+    - hidden
+  usage:
+    preferred:
+      - "icon-only buttons"
+      - "ambiguous controls"
+      - "keyboard shortcut hints"
+    avoid:
+      - "essential information"
+      - "long explanations"
+      - "mobile-only interactions"
+

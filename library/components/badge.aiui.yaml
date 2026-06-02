@@ -1,0 +1,25 @@
+component:
+  id: badge
+  category: status
+  purpose: "Show compact status, category, or metadata"
+  variants:
+    - neutral
+    - success
+    - warning
+    - danger
+    - info
+  sizes:
+    - sm
+    - md
+  states:
+    - default
+  usage:
+    preferred:
+      - "table statuses"
+      - "record state"
+      - "short metadata"
+    avoid:
+      - "long phrases"
+      - "using color alone for meaning"
+      - "badge overload in dense tables"
+

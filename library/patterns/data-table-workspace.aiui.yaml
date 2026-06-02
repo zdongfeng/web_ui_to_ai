@@ -1,0 +1,36 @@
+pattern:
+  id: data-table-workspace
+  register: product
+  purpose: "Support dense scanning, sorting, filtering, and row-level actions"
+  layout:
+    default_structure: toolbar-table-footer
+    density: compact
+  required_regions:
+    - table-toolbar
+    - table
+    - table-footer
+  optional_regions:
+    - column-controls
+    - row-actions
+    - empty-state
+  components:
+    recommended:
+      - table
+      - checkbox
+      - search-input
+      - select
+      - badge
+      - pagination
+      - empty-state
+  usage:
+    use_when:
+      - "Records must be compared across shared columns"
+      - "The table is the page's primary work surface"
+    avoid_when:
+      - "The content is narrative"
+      - "Each item needs rich media presentation"
+  avoid:
+    - "random column alignment"
+    - "overly tall rows without need"
+    - "too many badges per row"
+

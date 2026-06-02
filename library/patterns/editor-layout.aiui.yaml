@@ -1,0 +1,33 @@
+pattern:
+  id: editor-layout
+  register: product
+  purpose: "Provide a focused workspace for creating or editing content"
+  layout:
+    default_structure: canvas-inspector
+    density: medium
+  required_regions:
+    - editor-toolbar
+    - editor-canvas
+  optional_regions:
+    - inspector-panel
+    - asset-panel
+    - status-bar
+  components:
+    recommended:
+      - button
+      - icon-button
+      - tabs
+      - select
+      - tooltip
+      - toast
+  usage:
+    use_when:
+      - "The page centers on direct manipulation or content creation"
+      - "Users need tools near the work surface"
+    avoid_when:
+      - "The page is primarily a record list"
+  avoid:
+    - "placing editor tools far from the canvas"
+    - "overloading the toolbar with text buttons"
+    - "card-wrapping the entire editor surface"
+

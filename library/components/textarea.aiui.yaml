@@ -1,0 +1,25 @@
+component:
+  id: textarea
+  category: form
+  purpose: "Collect multi-line text"
+  variants:
+    - default
+    - error
+    - disabled
+  sizes:
+    - md
+    - lg
+  states:
+    - default
+    - focus
+    - disabled
+    - error
+  usage:
+    preferred:
+      - "comments"
+      - "descriptions"
+      - "long settings values"
+    avoid:
+      - "using textarea for short single-line values"
+      - "unbounded height in compact layouts"
+

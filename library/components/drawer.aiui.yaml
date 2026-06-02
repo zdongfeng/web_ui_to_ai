@@ -1,0 +1,25 @@
+component:
+  id: drawer
+  category: overlay
+  purpose: "Inspect or edit details while preserving page context"
+  variants:
+    - right
+    - left
+    - bottom
+  sizes:
+    - sm
+    - md
+    - lg
+  states:
+    - open
+    - closed
+  usage:
+    preferred:
+      - "record details"
+      - "secondary editing"
+      - "context-preserving workflows"
+    avoid:
+      - "primary full-page workflows"
+      - "deep nested navigation"
+      - "using drawer as default for every interaction"
+
