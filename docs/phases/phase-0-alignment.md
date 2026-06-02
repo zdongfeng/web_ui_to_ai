@@ -1,49 +1,49 @@
-# Phase 0: Alignment
+# Phase 0：产品边界确认
 
-## Goal
+## 目标
 
-Define the product boundary and avoid building a product that is too large too early.
+定义产品边界，避免太早把产品做大。
 
-## Key Questions
+## 关键问题
 
-- Who is the first user?
-- What exact pain do they have?
-- What is AIUI not going to do?
-- Which agent workflows should v0.1 support?
-- Which frontend stack should be used for validation?
+- 第一批用户是谁？
+- 他们的明确痛点是什么？
+- AIUI 不做什么？
+- v0.1 支持哪些 agent workflow？
+- 用哪个前端技术栈做验证？
 
-## Decisions
+## 决策
 
-### First User
+### 第一批用户
 
-Developers who mainly care about product logic and use AI agents to build frontend pages.
+主要使用 AI coding agent 写前端页面的开发者。
 
-### Pain
+### 痛点
 
-AI-generated frontend pages are often generic, visually weak, and inconsistent.
+AI 生成的前端页面经常泛、丑、不稳定，也不像真实产品。
 
-### Product Boundary
+### 产品边界
 
-AIUI provides a design intent spec and agent handoff workflow.
+AIUI 提供 UI 意图规范和 agent handoff workflow。
 
-It does not provide a visual design canvas in v0.1.
+v0.1 不提供可视化设计画布。
 
-### First Stack
+### 第一版技术栈
 
-React + Tailwind.
+React + Tailwind。
 
-## Deliverables
+## 产出
 
 - Vision document
 - v0.1 scope document
 - Product architecture document
 - Initial repository structure
 
-## Exit Criteria
+## 退出标准
 
-The team can explain AIUI in one sentence:
+团队可以用一句话解释 AIUI：
 
 ```text
-AIUI is a UI intent protocol that helps AI coding agents generate better frontend pages before they write code.
+AIUI 是一个 UI 意图协议，帮助 AI coding agent 在写代码前理解页面结构和设计约束。
 ```
 

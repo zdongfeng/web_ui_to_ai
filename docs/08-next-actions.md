@@ -1,69 +1,69 @@
-# Next Actions
+# 下一步行动
 
-This is the immediate execution checklist after the current documentation pass.
+这是当前文档整理完成后的立即执行清单。
 
-## Priority 1: Complete Core Library
+## 优先级 1：补全 Core Library
 
-Fill in detailed specs for:
+继续细化：
 
-- 20 components
-- 10 patterns
-- 5 pages
-- 3 brand profiles
+- 20 个 components
+- 10 个 patterns
+- 5 个 pages
+- 3 个 brand profiles
 
-Current files are high-level. They need concrete usage rules, avoid rules, and YAML examples.
+当前文件已经有高层结构，下一步需要补充更具体的 usage rules、avoid rules 和 YAML examples。
 
-## Priority 2: Run First Benchmark
+## 优先级 2：运行第一轮 Benchmark
 
-Use the benchmark tasks:
+使用这些 benchmark tasks：
 
 - `benchmarks/tasks/order-management.md`
 - `benchmarks/tasks/saas-settings.md`
 - `benchmarks/tasks/ai-tool-landing.md`
 
-For each task:
+每个任务执行：
 
-1. Run direct prompt with AI
-2. Run AIUI-assisted prompt with AI
-3. Score both using `benchmarks/scoring-rubric.md`
-4. Record failures
-5. Update AIUI rules
+1. 用 direct prompt 跑一次 AI
+2. 用 AIUI-assisted prompt 跑一次 AI
+3. 使用 `benchmarks/scoring-rubric.md` 给两组结果评分
+4. 记录失败点
+5. 更新 AIUI rules
 
-## Priority 3: Build Validator Prototype
+## 优先级 3：构建 Validator Prototype
 
-Start with:
+先实现：
 
 - Parse YAML
 - Validate required fields
 - Validate naming
 - Validate known component and pattern ids
 
-Do not implement visual audit.
+不要实现 visual audit。
 
-## Priority 4: Create First Starter Repo
+## 优先级 4：创建第一个 Starter Repo
 
-Create a minimal React + Tailwind app that includes:
+创建一个最小 React + Tailwind app，包含：
 
 - `.aiui/`
-- One page task
+- 一个 page task
 - Agent instructions
 - Example generated implementation
 
-## Priority 5: Decide Product Name and Public Framing
+## 优先级 5：确认产品名和公开表达
 
-AIUI is useful as a working name, but before public release decide:
+AIUI 适合作为工作名，但公开发布前需要确认：
 
-- Is AIUI the final name?
-- Is the tagline "UI intent protocol for AI coding agents"?
-- Is the first release a spec, CLI, or starter kit?
+- AIUI 是否是最终名称？
+- Tagline 是否是 “UI intent protocol for AI coding agents”？
+- 第一版发布 spec、CLI，还是 starter kit？
 
-## Recommended Next Step
+## 推荐下一步
 
-Do not start with the CLI.
+不要先做 CLI。
 
-The next best step is:
+最好的下一步是：
 
 ```text
-Complete the detailed component and pattern library, then run the first benchmark.
+补全详细 component 和 pattern library，然后运行第一轮 benchmark。
 ```
 

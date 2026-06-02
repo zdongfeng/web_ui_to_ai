@@ -1,6 +1,6 @@
-# Prompt: Compare With And Without AIUI
+# Prompt：对比有无 AIUI
 
-Use this prompt to help organize benchmark analysis after both versions are generated.
+在生成两个版本后，用这份 prompt 帮助整理 benchmark 分析。
 
 ```text
 Compare these two AI-generated frontend outputs:

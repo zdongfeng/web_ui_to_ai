@@ -1,6 +1,6 @@
 # Pattern Extraction Template
 
-Use this after several design cases reveal the same structure.
+当多个 design cases 出现同一种结构时，使用这份模板提炼 pattern。
 
 ## Pattern Candidate
 
@@ -15,23 +15,23 @@ Register:
 
 ## User Goal
 
-What user goal does this pattern support?
+这个 pattern 支持什么用户目标？
 
 ## When To Use
 
-Use this pattern when:
+适合使用这个 pattern 的情况：
 
-- 
+-
 
 ## When Not To Use
 
-Do not use this pattern when:
+不适合使用这个 pattern 的情况：
 
 -
 
 ## Required Regions
 
-- 
+-
 
 ## Optional Regions
 
@@ -63,7 +63,7 @@ Do not use this pattern when:
 
 ## Source Evidence
 
-References that support this pattern:
+支持这个 pattern 的参考：
 
 -
 

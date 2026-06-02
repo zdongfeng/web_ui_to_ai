@@ -1,16 +1,16 @@
-# Naming Conventions
+# 命名规范
 
-AIUI names should be stable, semantic, and easy for AI agents to understand.
+AIUI 命名应该稳定、语义化，并且容易被 AI agent 理解。
 
-## General Rules
+## 通用规则
 
-- Use lowercase
-- Use hyphen-separated names
-- Prefer semantic names over visual names
-- Avoid framework-specific terms
-- Avoid brand imitation names
+- 使用小写
+- 使用 hyphen 分隔单词
+- 优先使用语义名称，不使用视觉皮肤名称
+- 避免框架专属词
+- 避免品牌模仿名称
 
-## Good Names
+## 推荐命名
 
 ```text
 management-list
@@ -23,7 +23,7 @@ calm-saas
 editorial-brand
 ```
 
-## Bad Names
+## 不推荐命名
 
 ```text
 linear-dashboard
@@ -33,11 +33,11 @@ react-modal
 purple-glass-panel
 ```
 
-## Naming by Type
+## 按类型命名
 
 ### Components
 
-Components should describe reusable UI primitives.
+Components 描述可复用 UI primitives。
 
 ```text
 button
@@ -51,7 +51,7 @@ toast
 
 ### Patterns
 
-Patterns should describe reusable screen sections or page structures.
+Patterns 描述可复用页面区域或页面结构。
 
 ```text
 app-shell
@@ -63,7 +63,7 @@ auth-form
 
 ### Pages
 
-Pages should describe complete user-facing screens.
+Pages 描述完整用户界面。
 
 ```text
 login
@@ -75,7 +75,7 @@ dashboard
 
 ### Brand Profiles
 
-Brand profiles should describe style characteristics, not brands.
+Brand profiles 描述风格特征，不描述具体品牌。
 
 ```text
 precise-product-ui

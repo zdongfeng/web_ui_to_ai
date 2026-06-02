@@ -1,16 +1,16 @@
-# Benchmark Task: SaaS Settings Page
+# Benchmark Task：SaaS 设置页
 
-## User Requirement
+## 用户需求
 
-Build a workspace settings page for a SaaS product.
+构建一个 SaaS 产品的 workspace settings page。
 
-Users need to:
+用户需要：
 
-- Update workspace name
-- Manage billing email
-- Toggle product preferences
-- Review security settings
-- Access a danger zone
+- 更新 workspace name
+- 管理 billing email
+- 切换 product preferences
+- 查看 security settings
+- 访问 danger zone
 
 ## Direct Prompt
 
@@ -38,15 +38,15 @@ adapters/react-tailwind-adapter.md
 Use grouped settings sections and practical product UI. Avoid marketing-style cards, hero headers, and modal-first editing.
 ```
 
-## Expected Pattern
+## 预期 Pattern
 
 - app-shell
 - settings-section
 - optional billing-overview
 
-## Things To Watch
+## 观察重点
 
-- Does the AI use rows and sections instead of feature cards?
-- Are destructive actions visually separated?
-- Does the page feel like real software settings?
+- AI 是否使用 rows 和 sections，而不是 feature cards？
+- Destructive actions 是否被清晰分离？
+- 页面是否像真实软件设置页？
 

@@ -1,12 +1,12 @@
-# Phase 2: Core Spec v0.1
+# Phase 2：Core Spec v0.1
 
-## Goal
+## 目标
 
-Create the first version of the AIUI core specification.
+创建 AIUI core specification 的第一版。
 
-## Core Objects
+## 核心对象
 
-AIUI v0.1 should define:
+AIUI v0.1 需要定义：
 
 - Foundation
 - Tokens
@@ -16,17 +16,17 @@ AIUI v0.1 should define:
 - Brand profiles
 - Rules
 
-## Required Work
+## 必做工作
 
-### 1. Define Schema
+### 1. 定义 Schema
 
-Describe required and optional fields for every object type.
+描述每种对象的必填字段和可选字段。
 
-### 2. Define Naming Rules
+### 2. 定义命名规则
 
-Names must be stable, lowercase, and semantic.
+名称必须稳定、小写、语义化。
 
-Example:
+示例：
 
 ```text
 management-list
@@ -35,11 +35,11 @@ filter-toolbar
 precise-product-ui
 ```
 
-### 3. Define Component Specs
+### 3. 定义 Component Specs
 
-Start with 20 components.
+先从 20 个 components 开始。
 
-Examples:
+示例：
 
 - button
 - icon-button
@@ -52,11 +52,11 @@ Examples:
 - drawer
 - toast
 
-### 4. Define Patterns
+### 4. 定义 Patterns
 
-Start with 10 patterns.
+先从 10 个 patterns 开始。
 
-Examples:
+示例：
 
 - app-shell
 - management-list
@@ -69,11 +69,11 @@ Examples:
 - editor-layout
 - landing-page
 
-### 5. Define Pages
+### 5. 定义 Pages
 
-Start with 5 pages.
+先从 5 个 pages 开始。
 
-Examples:
+示例：
 
 - login
 - order-management
@@ -81,7 +81,7 @@ Examples:
 - settings
 - billing
 
-## Deliverables
+## 产出
 
 - `spec/aiui-core-schema.md`
 - `spec/naming-conventions.md`
@@ -91,7 +91,7 @@ Examples:
 - `library/pages.md`
 - `library/brand-profiles.md`
 
-## Exit Criteria
+## 退出标准
 
-An AI coding agent can read a page spec and understand what it should build before implementation begins.
+AI coding agent 读取 page spec 后，能在实现前理解要构建什么页面。
 

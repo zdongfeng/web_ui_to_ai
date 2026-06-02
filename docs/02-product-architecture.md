@@ -1,12 +1,12 @@
-# Product Architecture
+# 产品架构
 
-AIUI is composed of six product modules.
+AIUI 由六个产品模块组成。
 
 ## 1. AIUI Spec
 
-The core specification.
+核心规范。
 
-It defines:
+它定义：
 
 - Foundation principles
 - Tokens
@@ -16,15 +16,15 @@ It defines:
 - Brand profiles
 - Rules and anti-patterns
 
-The spec is framework-neutral, but it should be precise enough for adapters to produce useful frontend output.
+Spec 保持框架无关，但必须足够具体，让 adapter 可以生成稳定的前端实现约束。
 
 ## 2. Pattern Graph
 
-The pattern graph is the main product advantage.
+Pattern Graph 是 AIUI 的主要壁垒。
 
-It describes how pages, patterns, regions, and components relate to each other.
+它描述 pages、patterns、regions、components 之间如何组合。
 
-Example:
+示例：
 
 ```yaml
 page:
@@ -37,13 +37,13 @@ page:
     - detail-drawer
 ```
 
-This prevents AI from assembling pages randomly.
+它的作用是避免 AI 随机拼页面。
 
 ## 3. Handoff Pack
 
-The handoff pack is what developers give to Codex, Claude Code, Cursor, Gemini CLI, or another coding agent.
+Handoff Pack 是开发者交给 Codex、Claude Code、Cursor、Gemini CLI 或其他 AI coding agent 的文件包。
 
-It should include:
+建议结构：
 
 ```text
 .aiui/
@@ -54,19 +54,19 @@ It should include:
   examples/
 ```
 
-The handoff pack translates the spec into concrete instructions for a coding agent.
+它把规范转成 coding agent 可以直接读取的上下文。
 
 ## 4. Adapters
 
-Adapters explain how AIUI should be implemented in a specific stack.
+Adapter 说明 AIUI 如何落到某个技术栈。
 
-v0.1 should only support:
+v0.1 只支持：
 
 ```text
 React + Tailwind
 ```
 
-Future adapters may include:
+未来可以支持：
 
 - Vue + UnoCSS
 - Svelte
@@ -74,33 +74,33 @@ Future adapters may include:
 - SwiftUI
 - HTML + CSS
 
-Adapters should not pollute the AIUI core spec.
+Adapter 不应该污染 AIUI Core。
 
 ## 5. Validate
 
-AIUI Validate checks spec consistency.
+AIUI Validate 用来检查规范一致性。
 
-It should check:
+它检查：
 
-- Required fields
-- Unknown references
-- Duplicate names
-- Circular dependencies
-- Missing tokens
-- Page specs without required regions
-- Brand profiles without density or color strategy
+- 必填字段
+- 未知引用
+- 重复命名
+- 循环依赖
+- 缺失 tokens
+- page spec 是否缺少关键 region
+- brand profile 是否缺少 density 或 color strategy
 
-It should not judge visual beauty in v0.1.
+v0.1 不做视觉审美判断。
 
 ## 6. Project Profiler
 
-Project Profiler is a future module.
+Project Profiler 是未来模块。
 
-It reads an existing project, screenshots, or design notes and generates a project-specific AIUI profile.
+它读取现有项目、截图或设计说明，生成项目专属 AIUI profile。
 
-This becomes the project's UI memory.
+这会成为项目自己的 UI memory。
 
-Example:
+示例：
 
 ```yaml
 project:
@@ -114,5 +114,5 @@ style:
   border_strategy: subtle-lines
 ```
 
-Project Profiler is powerful, but it should not be part of v0.1 unless the core spec is already proven.
+Project Profiler 很有价值，但不应该在核心规范未验证前进入 v0.1。
 

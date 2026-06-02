@@ -1,27 +1,27 @@
 # Research
 
-This folder stores design research used to build AIUI.
+这个目录用于存放构建 AIUI 所需的设计研究材料。
 
-AIUI should learn from real products, but it should not copy brand styles directly. Each research note should extract reusable design decisions.
+AIUI 应该从真实产品中学习，但不能直接复制品牌风格。每份研究笔记都应该抽取可复用的设计决策。
 
-## Research Goals
+## 研究目标
 
-- Understand why strong products feel coherent
-- Extract layout and interaction patterns
-- Identify reusable UI decisions
-- Convert observations into AIUI components, patterns, pages, and brand profiles
+- 理解优秀产品为什么一致、清晰、稳定
+- 抽取 layout 和 interaction patterns
+- 找到可复用 UI 决策
+- 把观察转成 AIUI components、patterns、pages 和 brand profiles
 
-## Research Output
+## 研究产出
 
-Each reference should produce:
+每个参考对象应该产出：
 
-- One research note
+- 一份 research note
 - Pattern candidates
 - Component candidates
 - Anti-pattern observations
-- Possible AIUI rule improvements
+- 可能的 AIUI rule improvements
 
-## Start Here
+## 从这里开始
 
-Use `templates/design-case-template.md` for every design case.
+每个 design case 使用 `templates/design-case-template.md`。
 

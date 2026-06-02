@@ -1,6 +1,6 @@
 # Benchmark Result Template
 
-Use this template for each AIUI benchmark run.
+每次 AIUI benchmark run 使用这份模板。
 
 ## Task
 
@@ -32,7 +32,7 @@ AIUI files used:
 
 -
 
-## Output A: Without AIUI
+## Output A：Without AIUI
 
 Summary:
 
@@ -40,7 +40,7 @@ Screenshot or file reference:
 
 Notes:
 
-## Output B: With AIUI
+## Output B：With AIUI
 
 Summary:
 
@@ -74,7 +74,7 @@ Notes:
 
 ## Decision
 
-Did AIUI improve this task enough to keep developing the spec?
+AIUI 是否明显改善了这个任务？
 
 - yes
 - no

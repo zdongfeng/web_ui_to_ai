@@ -1,6 +1,6 @@
-# Prompt: Draft Page Spec
+# Prompt：起草 Page Spec
 
-Use this prompt to ask AI to draft an AIUI page spec from a product requirement.
+当你需要 AI 根据产品需求起草 AIUI page spec 时，使用这份 prompt。
 
 ```text
 Draft an AIUI page spec for the following product requirement.

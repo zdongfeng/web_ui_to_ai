@@ -1,8 +1,8 @@
-# Development Roadmap
+# 开发路线图
 
-This roadmap keeps the first version small enough to build and test.
+这份路线图用于控制第一版范围，让它足够小、可构建、可验证。
 
-## Phase Overview
+## 阶段总览
 
 ```text
 Phase 0: Alignment
@@ -16,124 +16,124 @@ Phase 6: Productization
 
 ## Phase 0: Alignment
 
-Goal:
+目标：
 
-Define product boundaries before writing too many files.
+在写太多文件前定义产品边界。
 
-Deliverables:
+产出：
 
-- Product positioning
-- Non-goals
-- Target users
-- v0.1 success metric
-- First supported stack
+- 产品定位
+- 非目标
+- 目标用户
+- v0.1 成功指标
+- 第一版支持的技术栈
 
-Decision:
+决策：
 
-AIUI v0.1 serves developers who use AI coding agents to create frontend pages and want better UI without becoming designers.
+AIUI v0.1 服务那些使用 AI coding agent 写前端页面、希望 UI 更好但不想成为设计师的开发者。
 
 ## Phase 1: Design Research
 
-Goal:
+目标：
 
-Extract reusable design decisions from strong products and common frontend page types.
+从优秀产品和常见前端页面中提取可复用的设计决策。
 
-Deliverables:
+产出：
 
-- 10 design case notes
-- 10 page pattern candidates
-- 3 style profile candidates
-- First anti-pattern list
+- 10 份 design case notes
+- 10 个 page pattern candidates
+- 3 个 style profile candidates
+- 第一批 anti-pattern list
 
-Important:
+关键原则：
 
-Study design decisions, not brand names.
+研究设计决策，不复制品牌名称。
 
 ## Phase 2: Core Spec v0.1
 
-Goal:
+目标：
 
-Create the first stable AIUI schema and library.
+创建第一版稳定 AIUI schema 和 library。
 
-Deliverables:
+产出：
 
 - Core schema
 - Naming conventions
-- 20 component specs
-- 10 pattern specs
-- 5 page specs
-- 3 brand profiles
+- 20 个 component specs
+- 10 个 pattern specs
+- 5 个 page specs
+- 3 个 brand profiles
 
-Output format:
+输出格式：
 
-- Markdown for explanation
-- YAML for examples
-- Future JSON Schema for validation
+- Markdown 用于解释
+- YAML 用于示例
+- 未来用 JSON Schema 做校验
 
 ## Phase 3: Agent Handoff Pack
 
-Goal:
+目标：
 
-Make AIUI usable by real AI coding agents.
+让 AIUI 能被真实 AI coding agent 使用。
 
-Deliverables:
+产出：
 
 - Agent instruction template
 - React + Tailwind adapter
-- Example `.aiui/` pack
-- Usage guide for Codex and Claude Code
+- 示例 `.aiui/` pack
+- Codex 和 Claude Code 使用说明
 
-Success:
+成功标准：
 
-A developer can copy the handoff pack into a project and ask an agent to implement a page from the spec.
+开发者可以把 handoff pack 放进项目，然后让 agent 基于 spec 实现页面。
 
 ## Phase 4: Validate
 
-Goal:
+目标：
 
-Prevent the spec from becoming inconsistent as it grows.
+防止 AIUI 随着增长变得自相矛盾。
 
-Deliverables:
+产出：
 
-- CLI command design
+- CLI 命令设计
 - Validation rules
 - Error message format
-- First implementation plan
+- 第一版实现计划
 
-The validator only checks structural correctness in v0.1.
+v0.1 只检查结构正确性。
 
 ## Phase 5: Benchmark
 
-Goal:
+目标：
 
-Prove that AIUI improves AI-generated frontend output.
+证明 AIUI 能改善 AI 生成前端的质量。
 
-Deliverables:
+产出：
 
-- 3 benchmark tasks
-- With-AIUI and without-AIUI comparison
+- 3 个 benchmark tasks
+- 有 AIUI 和无 AIUI 的对比
 - Scoring rubric
 - Human review notes
 - Failure analysis
 
-Success metric:
+成功指标：
 
-AIUI-assisted outputs should need fewer design corrections and show stronger layout consistency.
+AIUI-assisted 输出需要更少设计修正，并且页面结构更稳定。
 
 ## Phase 6: Productization
 
-Goal:
+目标：
 
-Turn the validated spec into a usable developer product.
+把已经验证有效的 spec 变成开发者可用产品。
 
-Possible deliverables:
+可能产出：
 
 - `aiui init`
 - `aiui add-page`
 - `aiui validate`
 - `aiui handoff codex`
-- Documentation site
+- 文档站
 - Starter repository
 
-Do not start this phase before benchmark results show real value.
+在 benchmark 没证明价值之前，不进入产品化阶段。
 

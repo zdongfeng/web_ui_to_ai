@@ -1,15 +1,15 @@
 # Guides
 
-This folder explains how to use AIUI with specific AI coding agents.
+这个目录说明如何把 AIUI 用在不同 AI coding agent 上。
 
-AIUI Core should remain agent-neutral. Agent-specific guidance belongs here.
+AIUI Core 应该保持 agent-neutral。针对具体 agent 的说明都放在这里。
 
-## Current Guides
+## 当前 Guides
 
 - `use-with-codex.md`
 - `use-with-claude-code.md`
 
-## Future Guides
+## 未来 Guides
 
 - Cursor
 - Gemini CLI

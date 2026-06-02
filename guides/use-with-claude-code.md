@@ -1,10 +1,10 @@
-# Use AIUI With Claude Code
+# 在 Claude Code 中使用 AIUI
 
-This guide explains how to use AIUI with Claude Code.
+这份文档说明如何在 Claude Code 中使用 AIUI。
 
-## Recommended Project Setup
+## 推荐项目结构
 
-Place a `.aiui/` folder in the target project.
+在目标项目中放置 `.aiui/` 文件夹。
 
 ```text
 .aiui/
@@ -15,7 +15,7 @@ Place a `.aiui/` folder in the target project.
     order-management.aiui.yaml
 ```
 
-## Recommended Claude Code Prompt
+## 推荐 Claude Code Prompt
 
 ```text
 Use AIUI as the source of design intent for this frontend task.
@@ -37,21 +37,21 @@ Important:
 - If the project conventions conflict with AIUI, explain the tradeoff before implementing.
 ```
 
-## Good Claude Code Tasks
+## 适合 Claude Code 的任务
 
-- Generate a page from AIUI
-- Refactor an AI-generated page to follow AIUI
-- Convert a product requirement into a draft page spec
-- Check whether a page implementation includes the required regions
-- Create a new pattern candidate from a repeated UI structure
+- 根据 AIUI 生成页面
+- 把 AI 生成过的页面重构为符合 AIUI
+- 把产品需求转成 draft page spec
+- 检查某个页面实现是否包含 required regions
+- 从重复 UI 结构中提炼新的 pattern candidate
 
-## Human Review Points
+## 人工 Review 要点
 
-After Claude Code generates a page, human review should check:
+Claude Code 生成页面后，人应该检查：
 
-- Did it follow the page type?
-- Did it include required regions?
-- Did it avoid banned generic patterns?
-- Did it preserve existing project conventions?
-- Did it create unnecessary components?
+- 是否遵守 page type？
+- 是否包含 required regions？
+- 是否避开 banned generic patterns？
+- 是否保留现有项目约定？
+- 是否创建了不必要的新组件？
 

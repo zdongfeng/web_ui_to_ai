@@ -1,6 +1,6 @@
-# Prompt: Extract Pattern From Reference
+# Prompt：从参考界面提取 Pattern
 
-Use this prompt during research.
+研究产品界面时使用这份 prompt。
 
 ```text
 Analyze the following product UI reference and extract reusable AIUI design decisions.

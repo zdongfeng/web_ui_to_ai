@@ -1,37 +1,37 @@
-# Human and AI Collaboration Workflow
+# 人和 AI 的协作流程
 
-AIUI should be developed through a clear division of labor.
+AIUI 应该通过清晰的人机分工来开发。
 
-The human defines taste, standards, naming, scope, and product direction. AI helps with research, drafting, extraction, consistency checks, examples, and implementation.
+人负责品味、标准、命名、范围和产品方向。AI 负责研究、起草、抽取、检查一致性、写示例和实现工具。
 
-## Principle
-
-```text
-Human = architect and final judge
-AI = researcher, drafter, analyst, documenter, engineer
-```
-
-AI can produce a lot of material quickly, but standards created entirely by AI tend to become generic and internally inconsistent.
-
-## Collaboration Loop
+## 原则
 
 ```text
-1. Human chooses a product area or page type
-2. AI researches strong references and extracts patterns
-3. Human accepts, rejects, renames, or reshapes the pattern
-4. AI writes AIUI spec files and examples
-5. AI checks for missing references and naming conflicts
-6. Human tests the spec with real coding agents
-7. Failures are converted into improved rules
+人 = 架构师和最终裁决者
+AI = 研究员、起草者、分析员、文档员、工程师
 ```
 
-## Work Modes
+AI 可以快速生成大量材料，但完全由 AI 生成的标准很容易变得普通、空泛且不一致。
+
+## 协作闭环
+
+```text
+1. 人选择一个产品领域或页面类型
+2. AI 研究优秀参考并提取规律
+3. 人接受、拒绝、重命名或重塑 pattern
+4. AI 编写 AIUI spec 和 examples
+5. AI 检查缺失引用和命名冲突
+6. 人用真实 AI coding agent 测试
+7. 把失败案例转成新的规范规则
+```
+
+## 工作模式
 
 ### Research Mode
 
-Use AI to analyze existing products, design systems, screenshots, or interfaces.
+用 AI 分析现有产品、设计系统、截图或界面。
 
-Output should be structured around:
+输出应该围绕：
 
 - Layout
 - Component composition
@@ -43,51 +43,51 @@ Output should be structured around:
 - Interaction model
 - What to avoid
 
-The output should not be "copy this product's style." It should be "extract the reusable decision pattern."
+目标不是“复制某个产品风格”，而是“抽取可复用的设计决策”。
 
 ### Specification Mode
 
-Use AI to turn approved decisions into AIUI files.
+用 AI 把已经确认的设计决策转成 AIUI 文件。
 
-Human decides:
+人决定：
 
-- Names
-- Hierarchy
-- Required fields
-- Which patterns belong in v0.1
-- What is too vague
-- What is too implementation-specific
+- 命名
+- 层级
+- 必填字段
+- 哪些 pattern 进入 v0.1
+- 哪些表达太模糊
+- 哪些表达太依赖实现
 
-AI writes:
+AI 编写：
 
-- YAML examples
-- Markdown references
-- Field descriptions
-- Consistency checks
+- YAML 示例
+- Markdown 说明
+- 字段解释
+- 一致性检查
 
 ### Agent Test Mode
 
-Use AI coding agents to generate frontend pages with and without AIUI.
+用 AI coding agent 在有 AIUI 和无 AIUI 两种情况下生成前端页面。
 
-Compare:
+比较：
 
-- Layout quality
-- Visual consistency
-- Code maintainability
-- Number of manual fixes
-- Whether the page feels like a real product
+- 布局质量
+- 视觉一致性
+- 代码可维护性
+- 手动修复次数
+- 页面是否像真实产品
 
 ### Improvement Mode
 
-When an AI-generated UI fails, do not only fix the UI. Fix the missing AIUI rule.
+当 AI 生成的 UI 失败时，不要只修页面，也要修缺失的 AIUI 规则。
 
-Example:
+示例：
 
 ```text
-Failure:
-The settings page used large marketing cards and a hero-style header.
+失败：
+settings 页面用了大面积营销卡片和 hero 标题。
 
-AIUI improvement:
-Add a product settings pattern with compact sections, inline descriptions, and no hero region.
+AIUI 改进：
+增加 settings-section pattern，要求紧凑分组、行内说明，禁止 hero 区域。
 ```
 

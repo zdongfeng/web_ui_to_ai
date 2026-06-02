@@ -1,18 +1,18 @@
-# Benchmark Task: Order Management Page
+# Benchmark Task：订单管理页
 
-## User Requirement
+## 用户需求
 
-Build an order management page for an operations dashboard.
+构建一个运营后台的订单管理页。
 
-Users need to:
+用户需要：
 
-- Search orders
-- Filter by status
-- Filter by date range
-- View order status
-- Inspect order details
-- Update fulfillment status
-- Handle bulk actions
+- 搜索订单
+- 按状态筛选
+- 按日期范围筛选
+- 查看订单状态
+- 检查订单详情
+- 更新履约状态
+- 执行批量操作
 
 ## Direct Prompt
 
@@ -40,17 +40,17 @@ adapters/react-tailwind-adapter.md
 Use the AIUI page structure and avoid rules. Do not turn this product page into a landing page. Keep it compact and operational.
 ```
 
-## Expected Pattern
+## 预期 Pattern
 
 - app-shell
 - management-list
 - data-table-workspace
 - optional detail-drawer
 
-## Things To Watch
+## 观察重点
 
-- Does the AI use a real table or decorative cards?
-- Does it create useful filters?
-- Does it preserve product UI density?
-- Does it avoid unrelated hero metrics?
+- AI 是否使用真实 table，而不是装饰性 cards？
+- Filters 是否真的有用？
+- 是否保持 product UI density？
+- 是否避免无关 hero metrics？
 

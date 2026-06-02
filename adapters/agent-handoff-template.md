@@ -1,33 +1,33 @@
 # Agent Handoff Template
 
-Use this template when giving AIUI to a coding agent.
+把 AIUI 交给 AI coding agent 时使用这份模板。
 
 ## Instruction
 
-Before writing frontend code, read the AIUI files in this project.
+写前端代码前，先读取当前项目里的 AIUI 文件。
 
-Follow this priority order:
+遵循优先级：
 
-1. Existing project components and conventions
+1. 现有项目组件和代码约定
 2. AIUI page spec
 3. AIUI patterns
 4. AIUI brand profile
 5. AIUI adapter guidance
-6. General frontend judgment
+6. 通用前端判断
 
 ## Rules
 
-- Do not invent a different page structure unless the AIUI spec is incomplete.
-- Do not use marketing layouts for product pages.
-- Do not use repeated decorative card grids unless the pattern asks for them.
-- Keep density, spacing, and hierarchy consistent with the brand profile.
-- Prefer practical product UI over decorative UI.
-- Preserve existing codebase patterns when available.
-- Ask for clarification only if a required region or primary user goal is missing.
+- 如果 AIUI spec 完整，不要发明完全不同的页面结构。
+- 不要把 product pages 做成 marketing layouts。
+- 不要使用重复装饰性 card grids，除非 pattern 明确要求。
+- 保持 density、spacing、hierarchy 与 brand profile 一致。
+- Product UI 优先实用性，少做装饰性 UI。
+- 有现有代码规范时，优先遵守项目规范。
+- 只有缺少 required region 或 primary user goal 时才询问。
 
 ## Expected Output
 
-Implement the requested page according to:
+根据以下文件实现页面：
 
 ```text
 .aiui/project.aiui.yaml
@@ -35,5 +35,5 @@ Implement the requested page according to:
 .aiui/tokens.aiui.yaml
 ```
 
-If the framework adapter conflicts with existing project conventions, follow the project conventions and explain the difference.
+如果 framework adapter 与现有项目约定冲突，优先遵守项目约定，并解释差异。
 

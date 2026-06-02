@@ -1,12 +1,12 @@
-# Phase 3: Agent Handoff Pack
+# Phase 3：Agent Handoff Pack
 
-## Goal
+## 目标
 
-Make AIUI usable inside real AI coding workflows.
+让 AIUI 能进入真实 AI coding workflow。
 
-## Handoff Structure
+## Handoff 结构
 
-The output pack should look like:
+输出文件包建议为：
 
 ```text
 .aiui/
@@ -17,36 +17,36 @@ The output pack should look like:
   examples/
 ```
 
-## Agent Instruction Requirements
+## Agent Instruction 要求
 
-The instruction file should tell the AI agent:
+Instruction 文件应该告诉 AI agent：
 
-- Read AIUI files before editing frontend code
-- Use existing project components first
-- Follow AIUI page structure
-- Do not invent unrelated visual patterns
-- Respect density, layout, and brand profile
-- Ask only when the spec is incomplete
-- Keep implementation framework-specific decisions inside the adapter
+- 修改前端代码前先读取 AIUI 文件
+- 优先使用现有项目组件
+- 遵守 AIUI page structure
+- 不要发明无关视觉 pattern
+- 遵守 density、layout、brand profile
+- spec 不完整时才询问
+- framework-specific 决策交给 adapter
 
-## First Adapter
+## 第一版 Adapter
 
-The first adapter is React + Tailwind.
+第一版 adapter 是 React + Tailwind。
 
-It should explain:
+它应该解释：
 
-- How to map tokens to Tailwind classes
-- How to interpret component specs
-- How to structure page regions
-- How to avoid common AI UI mistakes
+- 如何把 tokens 映射为 Tailwind classes
+- 如何解释 component specs
+- 如何组织 page regions
+- 如何避免常见 AI UI 错误
 
-## Deliverables
+## 产出
 
 - `adapters/agent-handoff-template.md`
 - `adapters/react-tailwind-adapter.md`
-- Example page specs in `examples/`
+- `examples/` 中的 page specs
 
-## Exit Criteria
+## 退出标准
 
-A developer can give the handoff pack to Codex or Claude Code and get a page that follows the AIUI structure.
+开发者可以把 handoff pack 交给 Codex 或 Claude Code，得到符合 AIUI 结构的页面。
 

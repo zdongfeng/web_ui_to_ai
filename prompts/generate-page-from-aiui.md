@@ -1,6 +1,6 @@
-# Prompt: Generate Page From AIUI
+# Prompt：根据 AIUI 生成页面
 
-Use this prompt when asking an AI coding agent to implement a page from AIUI.
+当你需要 AI coding agent 根据 AIUI 实现页面时，使用这份 prompt。
 
 ```text
 You are implementing a frontend page using AIUI.
@@ -31,4 +31,6 @@ After implementation, summarize:
 - Which existing components were reused
 - Any deviations from AIUI and why
 ```
+
+说明：上面的 prompt 保留英文，是为了直接复制给英文能力更稳定的 coding agent 使用。
 

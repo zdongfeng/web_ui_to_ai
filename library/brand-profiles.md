@@ -1,12 +1,12 @@
 # Brand Profiles v0.1
 
-Brand profiles define style direction without copying specific companies.
+Brand profiles 定义风格方向，但不复制具体公司。
 
-## Initial 3 Profiles
+## 初始 3 个 Profiles
 
 ### precise-product-ui
 
-Use for professional product tools, admin systems, operations interfaces, and dashboards.
+用于专业产品工具、管理系统、运营界面和 dashboards。
 
 ```yaml
 brand_profile:
@@ -25,7 +25,7 @@ brand_profile:
 
 ### calm-saas
 
-Use for SaaS products that need to feel approachable but still practical.
+用于需要友好但仍然实用的 SaaS 产品。
 
 ```yaml
 brand_profile:
@@ -44,7 +44,7 @@ brand_profile:
 
 ### editorial-brand
 
-Use for landing pages, content pages, launches, and brand-led surfaces.
+用于 landing pages、内容页、发布页和品牌主导页面。
 
 ```yaml
 brand_profile:
@@ -61,7 +61,7 @@ brand_profile:
     - "stock SaaS layout"
 ```
 
-## Profile Rule
+## Profile 规则
 
-Profiles should describe visual behavior, not brand imitation.
+Profiles 应描述视觉行为，而不是品牌模仿。
 

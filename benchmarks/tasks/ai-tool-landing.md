@@ -1,15 +1,15 @@
-# Benchmark Task: AI Tool Landing Page
+# Benchmark Task：AI 工具 Landing Page
 
-## User Requirement
+## 用户需求
 
-Build a landing page for an AI developer tool.
+构建一个 AI developer tool 的 landing page。
 
-Users need to:
+用户需要：
 
-- Understand what the product does
-- See the workflow
-- Trust that it works with coding agents
-- Start a trial
+- 理解产品做什么
+- 看到 workflow
+- 相信它能配合 coding agents 工作
+- 开始 trial
 
 ## Direct Prompt
 
@@ -37,7 +37,7 @@ adapters/react-tailwind-adapter.md
 Avoid generic purple AI gradients, identical icon-card feature grids, fake dashboard screenshots, and empty AI buzzword copy.
 ```
 
-## Expected Pattern
+## 预期 Pattern
 
 - landing-page
 - product-proof
@@ -45,10 +45,10 @@ Avoid generic purple AI gradients, identical icon-card feature grids, fake dashb
 - pricing-preview
 - final-action
 
-## Things To Watch
+## 观察重点
 
-- Does the page avoid generic AI startup visuals?
-- Does the hero communicate the product clearly?
-- Does the workflow section feel specific?
-- Does the page have enough brand character without becoming decorative?
+- 页面是否避免 generic AI startup visuals？
+- Hero 是否清楚表达产品？
+- Workflow section 是否具体？
+- 页面是否有足够品牌性，但不过度装饰？
 

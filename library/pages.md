@@ -1,8 +1,8 @@
 # Pages Library v0.1
 
-Pages are complete screen intents.
+Pages 是完整页面意图。
 
-## Initial 5 Pages
+## 初始 5 个 Pages
 
 1. login
 2. order-management
@@ -10,7 +10,7 @@ Pages are complete screen intents.
 4. settings
 5. billing
 
-## Page Spec Template
+## Page Spec 模板
 
 ```yaml
 page:
@@ -39,7 +39,7 @@ page:
     - "decorative feature cards"
 ```
 
-## Page Design Rule
+## Page 设计规则
 
-A page spec should be clear enough that two different AI agents produce similar structure even if their code differs.
+Page spec 应该足够清楚，让两个不同 AI agent 即使写出不同代码，也能生成相近的页面结构。
 

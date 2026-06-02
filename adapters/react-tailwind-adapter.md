@@ -1,12 +1,12 @@
 # React + Tailwind Adapter
 
-This adapter explains how an AI coding agent should implement AIUI specs in a React + Tailwind project.
+这份 adapter 说明 AI coding agent 应该如何在 React + Tailwind 项目中实现 AIUI specs。
 
-## Mapping Principles
+## 映射原则
 
-AIUI core remains framework-neutral.
+AIUI Core 保持框架无关。
 
-The adapter maps:
+Adapter 负责映射：
 
 ```text
 AIUI tokens → Tailwind theme or utility classes
@@ -18,14 +18,14 @@ AIUI brand profile → visual defaults and avoid rules
 
 ## Implementation Rules
 
-- Use existing project components first
-- Keep layout regions explicit
-- Use semantic component names
-- Avoid large decorative wrappers around every section
-- Avoid nested card structures
-- Keep product pages compact unless the page spec says otherwise
-- Use icons for common actions when the project already uses an icon library
-- Ensure mobile and desktop layouts are both considered
+- 优先使用现有项目组件
+- 明确拆分 layout regions
+- 使用语义化 component names
+- 不要给每个 section 都套大型装饰容器
+- 避免 nested cards
+- Product pages 默认保持紧凑，除非 page spec 另有说明
+- 项目已有 icon library 时，常见操作优先用 icon
+- 同时考虑 mobile 和 desktop
 
 ## Example Page Structure
 
@@ -45,17 +45,17 @@ export function OrderManagementPage() {
 
 ## Tailwind Guidance
 
-When mapping tokens:
+映射 tokens 时：
 
-- Use consistent spacing scale
-- Avoid arbitrary values unless needed
-- Prefer restrained shadows for product UI
-- Avoid pure black and pure white if project tokens provide tinted neutrals
-- Keep line length and responsive behavior under control
+- 使用一致 spacing scale
+- 除非必要，避免 arbitrary values
+- Product UI 使用克制 shadow
+- 如果项目有 tinted neutrals，避免纯黑纯白
+- 控制 line length 和 responsive behavior
 
 ## Anti-Patterns
 
-Do not default to:
+不要默认使用：
 
 - Purple gradients
 - Glass panels

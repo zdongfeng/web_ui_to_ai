@@ -1,18 +1,18 @@
-# MVP Build Order
+# MVP 构建顺序
 
-This document defines the practical build order after the documentation phase.
+这份文档定义文档阶段之后的实际构建顺序。
 
-## MVP Principle
+## MVP 原则
 
-Build only what is needed to answer one question:
+只构建能回答这个问题的东西：
 
 ```text
-Does AIUI make AI-generated frontend pages better?
+AIUI 是否能让 AI 生成的前端页面变好？
 ```
 
-## Step 1: Freeze v0.1 Spec Objects
+## Step 1：冻结 v0.1 核心对象
 
-Confirm the core object model:
+确认核心对象模型：
 
 - Foundation
 - Tokens
@@ -21,16 +21,16 @@ Confirm the core object model:
 - Pages
 - Brand Profiles
 
-Output:
+产出：
 
-- Finalized `spec/aiui-core-schema.md`
-- Updated naming rules
+- 定版 `spec/aiui-core-schema.md`
+- 更新命名规范
 
-## Step 2: Complete Library Details
+## Step 2：补全 Library 细节
 
-The current YAML files are good v0.1 drafts.
+当前 YAML 文件已经是 v0.1 draft。
 
-Next, improve each file with:
+下一步给每个文件补充：
 
 - `use_when`
 - `avoid_when`
@@ -38,15 +38,15 @@ Next, improve each file with:
 - `implementation_notes`
 - `accessibility_notes`
 
-Output:
+产出：
 
-- Complete component specs
-- Complete pattern specs
-- Complete page specs
+- 完整 component specs
+- 完整 pattern specs
+- 完整 page specs
 
-## Step 3: Build Validator Prototype
+## Step 3：实现 Validator Prototype
 
-Implement:
+实现：
 
 - YAML parsing
 - Required field validation
@@ -54,76 +54,76 @@ Implement:
 - Reference validation
 - Basic cycle detection
 
-Output:
+产出：
 
 ```bash
 aiui validate
 ```
 
-## Step 4: Create Starter Project
+## Step 4：创建 Starter Project
 
-Create a small React + Tailwind project with:
+创建一个小型 React + Tailwind 项目，包含：
 
 - `.aiui/`
-- one order management task
+- 一个 order management 任务
 - agent instructions
-- empty implementation area
+- 空实现区域
 
-Output:
+产出：
 
-- A reproducible benchmark project
+- 可复现 benchmark project
 
-## Step 5: Run Benchmark 1
+## Step 5：运行 Benchmark 1
 
-Run:
+运行：
 
 - Without AIUI
 - With AIUI
 
-Agents:
+Agents：
 
 - Codex
 - Claude Code
 
-Output:
+产出：
 
 - Screenshots
 - Scores
 - Failure notes
 
-## Step 6: Improve Spec From Failures
+## Step 6：从失败中改进 Spec
 
-Every failure should become:
+每个失败都应该变成：
 
-- A better avoid rule
-- A clearer pattern
-- A missing component
-- A better adapter instruction
+- 更好的 avoid rule
+- 更清晰的 pattern
+- 缺失的 component
+- 更好的 adapter instruction
 
-Output:
+产出：
 
 - AIUI v0.1 revision
 
-## Step 7: Decide Product Direction
+## Step 7：决定产品化方向
 
-If benchmark improves output:
+如果 benchmark 证明有效：
 
-- Build CLI
-- Create docs site
-- Publish starter kit
+- 做 CLI
+- 做文档站
+- 发布 starter kit
 
-If benchmark does not improve output:
+如果 benchmark 没证明有效：
 
-- Reduce abstraction
-- Improve handoff instructions
-- Add more concrete pattern examples
+- 降低抽象程度
+- 改进 handoff instructions
+- 增加更具体的 pattern examples
 
-## MVP Exit Criteria
+## MVP 退出标准
 
-AIUI is ready for public v0.1 when:
+AIUI 满足这些条件后，才适合发布 public v0.1：
 
-- The validator catches common spec errors
-- At least 3 benchmark tasks show improvement
-- Codex and Claude Code can both use the same AIUI specs
-- A new developer can follow the docs without asking the authors
+- Validator 能抓住常见 spec 错误
+- 至少 3 个 benchmark tasks 证明有效
+- Codex 和 Claude Code 能使用同一份 AIUI specs
+- 新开发者能根据文档独立使用
 

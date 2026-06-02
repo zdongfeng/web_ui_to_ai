@@ -1,12 +1,12 @@
 # Validator Rules v0.1
 
-This document defines the first validation rules for AIUI.
+这份文档定义 AIUI 的第一批 validation rules。
 
 ## Rule Groups
 
 ### 1. File Rules
 
-Required files in a project AIUI pack:
+Project AIUI pack 中必需文件：
 
 ```text
 .aiui/project.aiui.yaml
@@ -14,7 +14,7 @@ Required files in a project AIUI pack:
 .aiui/agent-instructions.md
 ```
 
-Recommended files:
+推荐文件：
 
 ```text
 .aiui/pages/*.aiui.yaml
@@ -22,15 +22,15 @@ Recommended files:
 
 ### 2. Naming Rules
 
-All ids must:
+所有 ids 必须：
 
-- Use lowercase
-- Use hyphen-separated words
-- Avoid spaces
-- Avoid framework names
-- Avoid brand imitation names
+- 使用小写
+- 使用 hyphen-separated words
+- 避免空格
+- 避免框架名
+- 避免品牌模仿名
 
-Invalid:
+无效：
 
 ```text
 LinearDashboard
@@ -38,7 +38,7 @@ react-button
 purple glass panel
 ```
 
-Valid:
+有效：
 
 ```text
 management-list
@@ -48,7 +48,7 @@ precise-product-ui
 
 ### 3. Project Rules
 
-`project.aiui.yaml` must define:
+`project.aiui.yaml` 必须定义：
 
 - `project.id`
 - `project.name`
@@ -61,20 +61,20 @@ precise-product-ui
 
 ### 4. Token Rules
 
-`tokens.aiui.yaml` should define:
+`tokens.aiui.yaml` 应定义：
 
 - `tokens.spacing`
 - `tokens.radius`
 - `tokens.typography`
 
-Recommended:
+推荐：
 
 - `tokens.surfaces`
 - `tokens.motion`
 
 ### 5. Page Rules
 
-Every page spec must define:
+每个 page spec 必须定义：
 
 - `page.id`
 - `page.type`
@@ -88,27 +88,27 @@ Every page spec must define:
 
 ### 6. Reference Rules
 
-The validator should check that:
+Validator 应检查：
 
-- Referenced patterns exist in the AIUI library
-- Referenced components exist in the AIUI library
-- Referenced brand profiles exist in the AIUI library or project pack
-- Referenced tokens exist when a spec uses explicit token ids
+- 引用的 patterns 存在于 AIUI library
+- 引用的 components 存在于 AIUI library
+- 引用的 brand profiles 存在于 AIUI library 或 project pack
+- 当 spec 使用显式 token ids 时，引用的 tokens 存在
 
 ### 7. Graph Rules
 
-The validator should reject:
+Validator 应拒绝：
 
-- Circular dependencies
-- Components depending on pages
-- Patterns depending on pages
+- 循环依赖
+- Components 依赖 pages
+- Patterns 依赖 pages
 - Unknown graph nodes
 
 ### 8. Avoid Rule Completeness
 
-Every page and brand profile should include at least one `avoid` rule.
+每个 page 和 brand profile 至少应该包含一个 `avoid` rule。
 
-This helps reduce generic AI UI output.
+这有助于减少 generic AI UI output。
 
 ## Error Format
 
@@ -119,7 +119,7 @@ AIUI validation failed
   - [rule-id] Human-readable error message
 ```
 
-Example:
+示例：
 
 ```text
 AIUI validation failed

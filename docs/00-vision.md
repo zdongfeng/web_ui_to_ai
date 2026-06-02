@@ -1,80 +1,78 @@
-# AIUI Vision
+# AIUI 愿景
 
-## Problem
+## 问题
 
-Many developers are comfortable with backend logic, product logic, data flow, and system architecture, but they do not want to spend much time designing frontend pages.
+很多开发者擅长业务逻辑、数据流、系统架构和后端实现，但并不想把大量时间花在前端页面设计上。
 
-AI coding agents can generate frontend code quickly, but the result is often visually weak:
+AI coding agent 可以很快写出前端代码，但页面经常存在这些问题：
 
-- Generic SaaS layouts
-- Repeated card grids
-- Random gradients
-- Weak hierarchy
-- Poor spacing rhythm
-- Inconsistent component decisions
-- Pages that look like demos rather than real product UI
+- 看起来像通用 SaaS 模板
+- 大量重复卡片
+- 随机渐变和装饰
+- 信息层级弱
+- 间距节奏混乱
+- 组件选择不一致
+- 页面像 demo，不像真实产品
 
-The issue is not that AI cannot write CSS. The issue is that AI usually writes UI without a clear design intent layer.
+问题不在于 AI 不会写 CSS，而在于 AI 写 UI 前通常没有清晰的设计意图层。
 
-## Product Positioning
+## 产品定位
 
-AIUI is a structured UI intent specification for AI coding agents.
+AIUI 是给 AI coding agent 使用的结构化 UI 意图规范。
 
-It gives AI a shared language for:
+它帮助 AI 理解：
 
-- Page type
-- Layout structure
-- Visual density
-- Component composition
-- Information hierarchy
-- Brand direction
-- Interaction expectations
-- Anti-patterns to avoid
+- 页面类型
+- 布局结构
+- 视觉密度
+- 组件组合
+- 信息层级
+- 品牌方向
+- 交互预期
+- 需要避免的反模式
 
-AIUI sits before code generation.
+AIUI 位于代码生成之前。
 
 ```text
-User requirement
+用户需求
 → AIUI page spec
 → Agent handoff pack
-→ Frontend implementation
+→ 前端实现
 ```
 
-## What AIUI Optimizes
+## AIUI 优化什么
 
-AIUI optimizes for:
+AIUI 优化的是：
 
-- Better first draft UI
-- Less design rework
-- More consistent pages across agents
-- Less dependency on the developer's design taste
-- Reusable design knowledge across projects
+- 更好的前端第一稿
+- 更少的设计返工
+- 不同 AI agent 生成结构更一致
+- 降低开发者对设计能力的依赖
+- 让设计知识可以跨项目复用
 
-AIUI does not try to solve all frontend problems.
+AIUI 不负责：
 
-It does not own:
+- 运行时组件行为
+- 后端逻辑
+- 完整设计创作
+- Figma 像素级还原
+- v0.1 的自动视觉评分
 
-- Runtime component behavior
-- Backend logic
-- Full design authoring
-- Pixel-perfect Figma parity
-- Automatic visual scoring in v0.1
+## 核心信念
 
-## Core Belief
+不要让 AI 从空白页开始设计。
 
-AI should not be asked to design from a blank page.
+AI 应该先获得一份结构化设计说明，这份说明需要：
 
-It should receive a structured design brief that is:
+- 框架无关
+- 机器可读
+- 人类可审阅
+- 必要时项目专属
+- 能被不同 AI agent 复用
 
-- Framework-neutral
-- Machine-readable
-- Human-reviewable
-- Project-specific when needed
-- Stable enough to be reused by different agents
+## 长期目标
 
-## Long-Term Ambition
+AIUI 的长期目标是成为 AI coding 工作流里的通用 UI planning layer。
 
-The long-term ambition is for AIUI to become a common UI planning layer for AI coding workflows.
-
-Not by declaring itself a standard on day one, but by proving that the same requirement produces better frontend output when an agent uses AIUI.
+它不是第一天就宣布自己是标准，而是先证明：同一个需求，使用 AIUI 的 AI agent 可以生成更好的前端页面。
 

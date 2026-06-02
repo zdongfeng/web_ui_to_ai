@@ -1,14 +1,14 @@
 # AIUI Core Schema
 
-This document describes the first conceptual schema for AIUI.
+这份文档描述 AIUI 的第一版概念 schema。
 
-The schema is intentionally written in Markdown first. Once the structure stabilizes, it can be converted into JSON Schema or another machine-checkable format.
+当前先用 Markdown 表达结构。等字段稳定后，再转换成 JSON Schema、Zod schema 或其他机器可校验格式。
 
 ## Foundation
 
-Foundation defines high-level design principles.
+Foundation 定义高层设计原则。
 
-Example:
+示例：
 
 ```yaml
 foundation:
@@ -25,9 +25,9 @@ foundation:
 
 ## Tokens
 
-Tokens define reusable design values.
+Tokens 定义可复用设计值。
 
-Example:
+示例：
 
 ```yaml
 tokens:
@@ -49,14 +49,15 @@ tokens:
 
 ## Components
 
-Components define semantic UI building blocks, not framework code.
+Components 定义语义化 UI 构件，不是 React、Vue、Tailwind 或 HTML 代码。
 
-Example:
+示例：
 
 ```yaml
 component:
   id: button
   category: action
+  purpose: "Trigger a user action"
   variants:
     - primary
     - secondary
@@ -74,9 +75,9 @@ component:
 
 ## Patterns
 
-Patterns define component composition.
+Patterns 定义组件和区域如何组合。
 
-Example:
+示例：
 
 ```yaml
 pattern:
@@ -97,9 +98,9 @@ pattern:
 
 ## Pages
 
-Pages define complete screen intent.
+Pages 定义完整页面意图。
 
-Example:
+示例：
 
 ```yaml
 page:
@@ -122,9 +123,9 @@ page:
 
 ## Brand Profiles
 
-Brand profiles define style direction without copying specific brands.
+Brand profiles 定义风格方向，但不复制具体品牌。
 
-Example:
+示例：
 
 ```yaml
 brand_profile:

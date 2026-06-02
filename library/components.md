@@ -1,8 +1,8 @@
 # Components Library v0.1
 
-AIUI components are semantic UI building blocks. They are not React, Vue, Tailwind, or HTML components.
+AIUI components 是语义化 UI 构件。它们不是 React、Vue、Tailwind 或 HTML 组件。
 
-## Initial 20 Components
+## 初始 20 个 Components
 
 1. button
 2. icon-button
@@ -25,7 +25,7 @@ AIUI components are semantic UI building blocks. They are not React, Vue, Tailwi
 19. empty-state
 20. section-header
 
-## Component Spec Template
+## Component Spec 模板
 
 ```yaml
 component:
@@ -53,9 +53,9 @@ component:
       - "using multiple primary buttons in the same region"
 ```
 
-## Component Design Rule
+## Component 设计规则
 
-Every component should describe:
+每个 component 都应该描述：
 
 - Purpose
 - Variants

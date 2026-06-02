@@ -1,10 +1,10 @@
 # Prompts
 
-This folder contains reusable prompts for AIUI workflows.
+这个目录存放 AIUI workflow 的可复用 prompts。
 
-Prompts should not replace the spec. They help agents use the spec correctly.
+Prompts 不能替代 spec。它们的作用是帮助 AI agent 正确使用 spec。
 
-## Current Prompts
+## 当前 Prompts
 
 - `generate-page-from-aiui.md`
 - `draft-page-spec.md`

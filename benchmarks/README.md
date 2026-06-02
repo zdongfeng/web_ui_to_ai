@@ -1,34 +1,34 @@
 # Benchmarks
 
-Benchmarks prove whether AIUI actually improves AI-generated frontend output.
+Benchmarks 用来证明 AIUI 是否真的改善 AI 生成前端的质量。
 
-The benchmark format is simple:
+基本方法很简单：
 
 ```text
-Same page requirement
-→ Run without AIUI
-→ Run with AIUI
-→ Compare results
+同一个页面需求
+→ 不使用 AIUI 生成
+→ 使用 AIUI 生成
+→ 对比结果
 ```
 
-## First Tasks
+## 第一批任务
 
 1. Order management page
 2. SaaS settings page
 3. AI tool landing page
 
-## Required Outputs
+## 必须记录的内容
 
-For each task, collect:
+每个任务收集：
 
 - Direct prompt
 - AIUI-assisted prompt
-- Generated output screenshots or notes
+- 生成结果截图或说明
 - Human score
 - Failure notes
 - Spec improvement suggestions
 
-## Scoring
+## 评分
 
-Use `scoring-rubric.md`.
+使用 `scoring-rubric.md`。
 

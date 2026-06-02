@@ -1,25 +1,25 @@
-# Validator Implementation Plan
+# Validator 实现计划
 
-The validator should be implemented after the v0.1 spec stabilizes.
+Validator 应该在 v0.1 spec 基本稳定后实现。
 
-## Recommended Stack
+## 推荐技术栈
 
-Use Node.js for the first implementation.
+第一版使用 Node.js。
 
-Reasons:
+原因：
 
-- Easy CLI distribution through npm
-- YAML parsing is straightforward
-- Most frontend developers already have Node
-- Works naturally with React + Tailwind validation experiments
+- 方便通过 npm 分发 CLI
+- YAML 解析简单
+- 大多数前端开发者已有 Node 环境
+- 与 React + Tailwind 验证实验天然匹配
 
-## Suggested Packages
+## 推荐 Packages
 
-- `yaml` for YAML parsing
-- `zod` or JSON Schema for structural validation
-- A small custom graph checker for dependencies
+- `yaml` 用于 YAML parsing
+- `zod` 或 JSON Schema 用于结构校验
+- 自定义小型 graph checker 用于依赖检查
 
-## CLI Shape
+## CLI 形态
 
 ```bash
 aiui validate
@@ -27,22 +27,22 @@ aiui validate --path .aiui
 aiui validate --strict
 ```
 
-## Implementation Steps
+## 实现步骤
 
-1. Load `.aiui/` files
-2. Parse YAML
-3. Validate required fields
-4. Validate names
-5. Load built-in library ids
-6. Check references
-7. Build graph
-8. Detect cycles
-9. Print errors
-10. Exit with non-zero status when validation fails
+1. 加载 `.aiui/` 文件
+2. 解析 YAML
+3. 校验必填字段
+4. 校验命名
+5. 加载内置 library ids
+6. 检查引用
+7. 构建 graph
+8. 检测 cycles
+9. 打印错误
+10. 校验失败时以 non-zero status 退出
 
-## First Tests
+## 第一批 Tests
 
-Create fixtures:
+创建 fixtures：
 
 - valid project
 - missing project fields
@@ -53,10 +53,10 @@ Create fixtures:
 
 ## Future Strict Mode
 
-Strict mode may check:
+Strict mode 可以检查：
 
-- Every page has avoid rules
-- Every pattern has usage and non-usage rules
-- Every component has states
-- Every brand profile defines motion
+- 每个 page 都有 avoid rules
+- 每个 pattern 都有 usage 和 non-usage rules
+- 每个 component 都有 states
+- 每个 brand profile 都定义 motion
 

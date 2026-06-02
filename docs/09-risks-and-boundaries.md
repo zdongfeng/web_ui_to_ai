@@ -1,22 +1,22 @@
-# Risks and Boundaries
+# 风险和边界
 
-AIUI can easily become too large. This document keeps the product focused.
+AIUI 很容易被做得过大。这份文档用于保持产品聚焦。
 
-## Core Risk
+## 核心风险
 
-The main risk is turning AIUI into a full design platform before proving the spec is useful.
+最大的风险是：在证明 spec 有用之前，就把 AIUI 做成完整设计平台。
 
-AIUI should first prove:
+AIUI 第一阶段只需要证明：
 
 ```text
-Structured UI intent improves AI-generated frontend output.
+结构化 UI 意图能改善 AI 生成前端页面的质量。
 ```
 
-Everything else is secondary.
+其他能力都应该靠后。
 
-## Risk 1: Becoming A UI Framework
+## 风险 1：变成 UI Framework
 
-AIUI should not compete with:
+AIUI 不应该和这些产品竞争：
 
 - shadcn/ui
 - Radix
@@ -25,15 +25,15 @@ AIUI should not compete with:
 - Tailwind
 - React Aria
 
-Boundary:
+边界：
 
 ```text
-AIUI describes intent. Frameworks implement UI.
+AIUI 描述设计意图，UI framework 负责实现组件。
 ```
 
-## Risk 2: Becoming A Design Canvas
+## 风险 2：变成设计画布
 
-AIUI should not start by competing with:
+AIUI 不应该一开始就竞争：
 
 - Figma
 - Claude Design
@@ -41,35 +41,35 @@ AIUI should not start by competing with:
 - v0
 - Lovable
 
-Boundary:
+边界：
 
 ```text
-AIUI provides the design intent layer that coding agents can read.
+AIUI 是 coding agent 可以读取的设计意图层。
 ```
 
-## Risk 3: Becoming An Automatic Aesthetic Judge
+## 风险 3：变成自动审美裁判
 
-AIUI v0.1 should not do screenshot-based beauty scoring.
+AIUI v0.1 不做截图审美评分。
 
-Boundary:
+边界：
 
 ```text
-Validate checks spec structure, not visual beauty.
+Validate 检查 spec 结构，不判断页面美不美。
 ```
 
-Visual audit may become a future optional module only after the spec proves value.
+视觉审查可以是未来可选模块，但必须等 spec 本身被证明有效之后。
 
-## Risk 4: Copying Brands
+## 风险 4：复制品牌
 
-AIUI should learn from strong products but avoid direct brand imitation.
+AIUI 可以学习优秀产品，但不能直接模仿品牌。
 
-Bad:
+不推荐：
 
 ```yaml
 brand: linear
 ```
 
-Good:
+推荐：
 
 ```yaml
 brand_profile:
@@ -78,24 +78,24 @@ brand_profile:
   border_strategy: subtle-lines
 ```
 
-Boundary:
+边界：
 
 ```text
-Extract design decisions, not brand skins.
+抽取设计决策，不复制品牌皮肤。
 ```
 
-## Risk 5: Over-Abstracting
+## 风险 5：过度抽象
 
-If AIUI is too abstract, agents will ignore it or interpret it randomly.
+如果 AIUI 太抽象，agent 会忽略它，或者随意解释。
 
-Bad:
+不推荐：
 
 ```yaml
 Card:
   radius: medium
 ```
 
-Better:
+更好：
 
 ```yaml
 radius:
@@ -107,34 +107,34 @@ radius:
       - "large landing hero regions"
 ```
 
-Boundary:
+边界：
 
 ```text
-AIUI should be framework-neutral, not vague.
+AIUI 应该框架无关，但不能模糊。
 ```
 
-## Risk 6: Letting AI Define The Standard Alone
+## 风险 6：让 AI 独自定义标准
 
-AI is useful for research and drafting, but final standards need human judgment.
+AI 很适合研究和起草，但最终标准需要人的判断。
 
-Boundary:
+边界：
 
 ```text
-AI drafts. Humans decide.
+AI 起草，人来裁决。
 ```
 
-## v0.1 Boundary Summary
+## v0.1 边界总结
 
-Do:
+要做：
 
 - Spec
 - Pattern graph
 - Handoff pack
 - React + Tailwind adapter
-- Validate structure
+- 结构校验
 - Benchmark
 
-Do not:
+不要做：
 
 - Visual canvas
 - Screenshot beauty scoring

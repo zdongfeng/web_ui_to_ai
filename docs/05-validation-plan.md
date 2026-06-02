@@ -1,82 +1,82 @@
-# Validation Plan
+# 验证计划
 
-The first validation should prove that AIUI improves AI agent frontend output.
+第一轮验证要证明：AIUI 是否真的能改善 AI agent 的前端输出。
 
-## Experiment Design
+## 实验设计
 
-Use the same page requirement in two groups.
+同一个页面需求分成两组。
 
 ```text
 Group A:
-Prompt AI directly without AIUI.
+直接给 AI prompt，不提供 AIUI。
 
 Group B:
-Give AI the AIUI spec, adapter instructions, and page spec first.
+先提供 AIUI spec、adapter instructions 和 page spec，再让 AI 实现。
 ```
 
-Each task should be run multiple times with the same agent or across different agents.
+每个任务可以用同一个 agent 多跑几次，也可以跨 agent 对比。
 
-## First Benchmark Tasks
+## 第一批 Benchmark Tasks
 
-1. Order management page
-2. SaaS settings page
-3. AI tool landing page
+1. 订单管理页
+2. SaaS 设置页
+3. AI 工具 landing page
 
-These cover:
+这三类覆盖：
 
 - Product UI
-- Dense data UI
+- 高密度数据 UI
 - Settings information architecture
-- Brand/landing UI
+- Brand / landing UI
 
-## Evaluation Rubric
+## 评分维度
 
-Score each output from 1 to 5.
+每项 1 到 5 分。
 
 ### Layout Appropriateness
 
-Does the page structure fit the task?
+页面结构是否适合任务？
 
 ### Visual Hierarchy
 
-Can users understand what matters first?
+用户能否快速看出重点？
 
 ### Density Control
 
-Is the page too empty, too crowded, or appropriate?
+页面是否过空、过挤，或者密度合适？
 
 ### Component Consistency
 
-Are repeated elements visually and behaviorally consistent?
+重复元素是否一致？
 
 ### AI Slop Avoidance
 
-Does the page avoid generic AI visual patterns?
+是否避免了典型 AI 味？
 
 ### Implementation Readiness
 
-Is the code clean enough to continue building on?
+代码是否足够清晰，能继续维护？
 
-## Success Criteria
+## 成功标准
 
-AIUI succeeds if:
+AIUI 成功需要满足：
 
-- Group B consistently scores higher
-- Group B needs fewer manual design corrections
-- Group B pages feel more like real product UI
-- Different agents produce more similar structure when using the same AIUI spec
+- Group B 持续高于 Group A
+- Group B 需要更少手动设计修正
+- Group B 页面更像真实产品
+- 不同 agent 使用同一 AIUI spec 时结构更接近
 
-## Failure Analysis
+## 失败分析
 
-Every failure should become a spec improvement.
+每个失败都应该变成一个 spec 改进。
 
-Example:
+示例：
 
 ```text
-Observed failure:
-The AI generated four identical cards for unrelated settings.
+观察到的失败：
+AI 把设置页做成了四个相同的大卡片。
 
-Spec improvement:
-Add settings-section pattern with rows, grouped fields, inline descriptions, and optional danger zone.
+Spec 改进：
+增加 settings-section pattern，要求 rows、grouped fields、inline descriptions 和 optional danger zone。
 ```
 

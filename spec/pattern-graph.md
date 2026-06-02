@@ -1,14 +1,14 @@
 # Pattern Graph
 
-The pattern graph describes how AIUI objects depend on and compose each other.
+Pattern Graph 描述 AIUI 对象之间如何依赖和组合。
 
-This is one of the most important parts of AIUI.
+这是 AIUI 最重要的部分之一。
 
-## Why It Matters
+## 为什么重要
 
-AI-generated UI often fails because the agent chooses page structure freely.
+AI 生成 UI 经常失败，是因为它自由选择页面结构。
 
-The pattern graph gives the agent a constrained composition path.
+Pattern Graph 给 agent 一条受约束的组合路径。
 
 ```text
 Page
@@ -18,7 +18,7 @@ Page
 → Tokens
 ```
 
-## Example Graph
+## 示例 Graph
 
 ```yaml
 page:
@@ -47,31 +47,31 @@ region:
       - button
 ```
 
-## Graph Rules
+## Graph 规则
 
-- A page can use many patterns
-- A pattern can use many regions
-- A region can use many components
-- Components can depend on tokens
-- Patterns should not depend on pages
-- Components should not depend on pages
-- Circular dependencies are invalid
+- 一个 page 可以使用多个 patterns
+- 一个 pattern 可以使用多个 regions
+- 一个 region 可以使用多个 components
+- Components 可以依赖 tokens
+- Patterns 不应该依赖 pages
+- Components 不应该依赖 pages
+- 循环依赖无效
 
-## Validation Examples
+## Validation 示例
 
-Invalid:
+无效：
 
 ```text
 management-list -> data-table-workspace -> management-list
 ```
 
-Invalid:
+无效：
 
 ```text
 button -> order-management
 ```
 
-Valid:
+有效：
 
 ```text
 order-management -> management-list -> data-table -> tokens

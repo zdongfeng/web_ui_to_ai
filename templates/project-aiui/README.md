@@ -1,8 +1,8 @@
 # Project AIUI Template
 
-This folder is a starter `.aiui/` pack for a real product project.
+这个目录是给真实产品项目使用的 `.aiui/` starter pack。
 
-In a user's project, this would become:
+在用户项目中，它会变成：
 
 ```text
 .aiui/
@@ -13,9 +13,9 @@ In a user's project, this would become:
   agent-instructions.md
 ```
 
-## Usage
+## 使用方式
 
-Copy this structure into a frontend project, then ask an AI coding agent:
+把这个结构复制进前端项目，然后让 AI coding agent 执行：
 
 ```text
 Before editing frontend code, read .aiui/agent-instructions.md and the relevant page spec.

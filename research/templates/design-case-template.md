@@ -1,8 +1,8 @@
 # Design Case Template
 
-Use this template when analyzing a product, page, screenshot, or design system.
+分析产品、页面、截图或设计系统时使用这份模板。
 
-## Basic Info
+## 基本信息
 
 Reference name:
 
@@ -24,11 +24,11 @@ Register:
 - product
 - brand
 
-## Surface Summary
+## 界面总结
 
-Describe the interface in one paragraph.
+用一段话描述这个界面。
 
-Focus on what the interface helps users do, not whether it looks beautiful.
+重点写它帮助用户完成什么，而不是单纯评价好不好看。
 
 ## Layout Model
 
@@ -48,7 +48,7 @@ Regions:
 - Region 2:
 - Region 3:
 
-What determines hierarchy?
+层级主要由什么决定？
 
 - Typography
 - Spacing
@@ -65,9 +65,9 @@ Density:
 - medium
 - open
 
-Why this density fits the product:
+为什么这个 density 适合产品？
 
-Where density changes within the page:
+页面里哪些地方 density 会变化？
 
 ## Navigation Model
 
@@ -82,7 +82,7 @@ Navigation type:
 
 Navigation behavior:
 
-What AIUI pattern this suggests:
+这提示了什么 AIUI pattern？
 
 ## Component Composition
 
@@ -94,7 +94,7 @@ Important components:
   - Placement:
   - Related pattern:
 
-Repeated component groups:
+重复出现的 component groups：
 
 ## Typography
 
@@ -161,19 +161,19 @@ Feedback style:
 
 Motion style:
 
-## Useful Decisions To Extract
+## 可提取的设计决策
 
-List reusable decisions.
+列出可复用决策。
 
-Example:
+示例：
 
 ```text
 Settings pages use grouped rows with inline descriptions instead of card grids.
 ```
 
-## What Not To Copy
+## 不应该复制什么
 
-List visual details that are too brand-specific or superficial.
+列出过于品牌化或表层化的视觉细节。
 
 ## AIUI Candidates
 
@@ -189,9 +189,9 @@ Rules:
 
 Avoid rules:
 
-## Final Human Judgment
+## 最终人工判断
 
-Should this influence AIUI v0.1?
+是否应该影响 AIUI v0.1？
 
 - yes
 - no

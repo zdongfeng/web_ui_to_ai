@@ -1,136 +1,136 @@
-# AIUI Benchmark Scoring Rubric
+# AIUI Benchmark 评分表
 
-Score each category from 1 to 5.
+每个维度 1 到 5 分。
 
-1 means poor. 5 means strong.
+1 表示很差，5 表示很强。
 
 ## 1. Layout Appropriateness
 
-Does the page structure fit the task?
+页面结构是否适合任务？
 
-Score 1:
+1 分：
 
-- Wrong page type
-- Marketing layout used for product UI
-- Major regions missing
+- 页面类型错误
+- Product UI 被做成 marketing layout
+- 缺少关键区域
 
-Score 3:
+3 分：
 
-- Mostly correct structure
-- Some missing or unnecessary sections
+- 结构大体正确
+- 有些缺失或多余 section
 
-Score 5:
+5 分：
 
-- Structure directly supports the user's workflow
-- Required regions are clear
-- No unrelated sections
+- 结构直接支持用户工作流
+- Required regions 清晰
+- 没有无关 section
 
 ## 2. Visual Hierarchy
 
-Can users understand what matters first?
+用户能否理解什么最重要？
 
-Score 1:
+1 分：
 
-- Everything has similar weight
-- Important actions are buried
-- Headings and content fight each other
+- 所有元素权重接近
+- 重要操作被埋没
+- 标题和内容互相抢层级
 
-Score 3:
+3 分：
 
-- Basic hierarchy exists
-- Some unclear grouping
+- 有基本层级
+- 局部分组不清楚
 
-Score 5:
+5 分：
 
-- Primary task is obvious
-- Sections are readable
-- Actions are placed where users expect them
+- 主任务明显
+- Sections 易读
+- 操作位置符合预期
 
 ## 3. Density Control
 
-Is the interface too empty, too crowded, or appropriate?
+界面是否过空、过挤，或密度合适？
 
-Score 1:
+1 分：
 
-- Too sparse for product UI
-- Too crowded to scan
-- Spacing is random
+- Product UI 过于稀疏
+- 拥挤到难以扫描
+- 间距随机
 
-Score 3:
+3 分：
 
-- Usable but uneven density
+- 可用，但 density 不均匀
 
-Score 5:
+5 分：
 
-- Density matches the task and user context
-- Spacing rhythm feels intentional
+- Density 匹配任务和用户场景
+- Spacing rhythm 有意图
 
 ## 4. Component Consistency
 
-Are repeated elements consistent?
+重复元素是否一致？
 
-Score 1:
+1 分：
 
-- Inconsistent buttons, cards, fields, tables, or badges
-- Similar actions look different
+- 按钮、卡片、字段、表格、badge 不一致
+- 类似操作长得不一样
 
-Score 3:
+3 分：
 
-- Mostly consistent
-- Some mismatched variants
+- 大体一致
+- 少数 variant 不匹配
 
-Score 5:
+5 分：
 
-- Components feel like part of the same system
-- Variants map to meaning
+- Components 像同一个系统
+- Variants 与语义对应
 
 ## 5. AI Slop Avoidance
 
-Does it avoid generic AI UI patterns?
+是否避免了典型 AI UI 套路？
 
-Score 1:
+1 分：
 
 - Generic gradient background
 - Identical icon card grid
 - Fake hero metrics
 - Decorative glass panels
 
-Score 3:
+3 分：
 
-- Some generic choices, but not dominant
+- 有一些 generic choices，但不占主导
 
-Score 5:
+5 分：
 
-- Interface feels specific to the product task
-- No obvious AI-generated cliches
+- 界面针对具体产品任务
+- 没有明显 AI 生成套话和视觉套路
 
 ## 6. Implementation Readiness
 
-Can a developer continue building on this?
+开发者是否能继续维护？
 
-Score 1:
+1 分：
 
-- Messy structure
-- Hard-coded visual chaos
-- Poor responsive behavior
+- 结构混乱
+- 视觉硬编码严重
+- Responsive behavior 很差
 
-Score 3:
+3 分：
 
-- Usable code with some cleanup needed
+- 可用，但需要一些 cleanup
 
-Score 5:
+5 分：
 
-- Clear structure
-- Components and regions are maintainable
-- Responsive behavior is considered
+- 结构清晰
+- Components 和 regions 可维护
+- 考虑了 responsive behavior
 
-## Total
+## 总分
 
-Maximum score:
+最高分：
 
 ```text
 30 points
 ```
 
-AIUI should be considered promising if AIUI-assisted outputs consistently score at least 5 points higher than direct outputs.
+如果 AIUI-assisted 输出稳定比 direct 输出高至少 5 分，可以认为 AIUI 有继续验证价值。
 

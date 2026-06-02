@@ -1,46 +1,46 @@
-# Phase 5: Benchmark
+# Phase 5：Benchmark
 
-## Goal
+## 目标
 
-Prove that AIUI improves AI-generated frontend output.
+证明 AIUI 能改善 AI 生成前端页面的质量。
 
-## Test Method
+## 测试方法
 
-For each benchmark task:
+对每个 benchmark task：
 
 ```text
-1. Ask an AI agent to build the page without AIUI
-2. Ask the same agent to build the page with AIUI
-3. Compare outputs with a human rubric
-4. Record failures
-5. Convert failures into spec improvements
+1. 不给 AIUI，让 AI agent 直接构建页面
+2. 给同一个 agent AIUI，再构建同一页面
+3. 用人工 rubric 比较结果
+4. 记录失败
+5. 把失败转成 spec 改进
 ```
 
-## First Benchmark Tasks
+## 第一批 Benchmark Tasks
 
 - Order management page
 - SaaS settings page
 - AI tool landing page
 
-## Agents to Test
+## 测试 Agents
 
-Start with:
+先测试：
 
 - Codex
 - Claude Code
 
-Later:
+之后再测试：
 
 - Cursor
 - Gemini CLI
 - Windsurf
 - Augment
 
-## Scoring
+## 评分
 
-Use the rubric in `docs/05-validation-plan.md`.
+使用 `docs/05-validation-plan.md` 中的 rubric。
 
-## Deliverables
+## 产出
 
 - Benchmark prompts
 - Generated outputs
@@ -48,7 +48,7 @@ Use the rubric in `docs/05-validation-plan.md`.
 - Failure notes
 - Spec improvements
 
-## Exit Criteria
+## 退出标准
 
-AIUI-assisted outputs score higher than direct prompts often enough to justify building tooling.
+AIUI-assisted 输出比 direct prompts 得分更高，且足以证明继续做 tooling 有价值。
 

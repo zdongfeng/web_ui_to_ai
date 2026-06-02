@@ -1,14 +1,14 @@
 # AIUI Validate
 
-AIUI Validate checks the structure and consistency of AIUI files.
+AIUI Validate 用来检查 AIUI 文件的结构和一致性。
 
-It does not judge visual beauty in v0.1.
+v0.1 不判断视觉美丑。
 
-## Goal
+## 目标
 
-Prevent the AIUI spec from becoming inconsistent as it grows.
+防止 AIUI spec 随着增长变得不一致。
 
-## Proposed Command
+## 命令设计
 
 ```bash
 aiui validate
@@ -16,7 +16,7 @@ aiui validate
 
 ## Validation Scope
 
-Validate should check:
+Validate 应检查：
 
 - File structure
 - Required fields
@@ -27,14 +27,14 @@ Validate should check:
 - Page completeness
 - Brand profile completeness
 
-## Not in Scope
+## 不在范围内
 
-Validate should not check:
+Validate 不检查：
 
-- Whether a page looks beautiful
+- 页面是否漂亮
 - Screenshot quality
-- Visual hierarchy from rendered UI
-- Code implementation quality
+- 渲染后 UI 的视觉层级
+- 代码实现质量
 
-Those may become separate modules later.
+这些未来可以成为独立模块。
 

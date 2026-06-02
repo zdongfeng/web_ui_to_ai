@@ -1,14 +1,14 @@
-# Phase 1: Design Research
+# Phase 1：设计研究
 
-## Goal
+## 目标
 
-Build the first design knowledge base from real product patterns.
+从真实产品 pattern 中建立第一批设计知识库。
 
-## Research Targets
+## 研究对象
 
-Use strong products and design systems as references, but do not copy their brand identities.
+可以参考优秀产品和设计系统，但不要复制它们的品牌身份。
 
-Suggested references:
+建议研究：
 
 - Linear
 - Notion
@@ -21,9 +21,9 @@ Suggested references:
 - Shopify
 - Retool
 
-## Research Template
+## 研究模板
 
-For each reference, extract:
+每个参考对象都要提取：
 
 ```text
 Product type:
@@ -41,34 +41,34 @@ Useful design decisions:
 Anti-patterns to avoid:
 ```
 
-## AI Role
+## AI 的角色
 
-AI can:
+AI 可以：
 
-- Analyze screenshots
-- Summarize visual patterns
-- Compare multiple products
-- Propose reusable pattern names
-- Draft research notes
+- 分析截图
+- 总结视觉 pattern
+- 对比多个产品
+- 提议可复用 pattern 名称
+- 起草研究笔记
 
-## Human Role
+## 人的角色
 
-Human must:
+人必须：
 
-- Reject superficial style copying
-- Rename patterns
-- Decide what belongs in AIUI v0.1
-- Choose the first style profiles
+- 拒绝表层风格复制
+- 重命名 pattern
+- 决定哪些进入 AIUI v0.1
+- 选择第一批 style profiles
 
-## Deliverables
+## 产出
 
-- 10 reference notes
-- 10 pattern candidates
-- 20 component candidates
-- 3 style profile candidates
-- Initial anti-pattern list
+- 10 份 reference notes
+- 10 个 pattern candidates
+- 20 个 component candidates
+- 3 个 style profile candidates
+- 初始 anti-pattern list
 
-## Exit Criteria
+## 退出标准
 
-The team has enough evidence to define the first AIUI library without inventing everything from scratch.
+团队有足够依据定义第一版 AIUI library，而不是凭空发明。
 

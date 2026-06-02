@@ -1,10 +1,10 @@
-# Phase 6: Productization
+# Phase 6：产品化
 
-## Goal
+## 目标
 
-Turn AIUI from a specification repository into a usable developer product.
+把 AIUI 从 specification repository 变成开发者可用产品。
 
-## Product Options
+## 产品形态
 
 ### CLI
 
@@ -15,28 +15,28 @@ aiui validate
 aiui handoff codex
 ```
 
-### Documentation Site
+### 文档站
 
-The site should explain:
+文档站应该解释：
 
-- What AIUI is
-- How to use it with AI coding agents
-- Component and pattern references
+- AIUI 是什么
+- 如何和 AI coding agents 一起使用
+- Component 和 pattern references
 - Example page specs
 - Benchmark results
 
 ### Starter Repo
 
-Provide a starter repo containing:
+提供 starter repo：
 
 - `.aiui/`
 - Example React + Tailwind app
 - Example page tasks
 - Agent handoff instructions
 
-## Future Modules
+## 未来模块
 
-These should only be explored after v0.1 is validated:
+这些模块应该等 v0.1 被验证后再考虑：
 
 - Project Profiler
 - Figma import
@@ -45,7 +45,7 @@ These should only be explored after v0.1 is validated:
 - Pattern marketplace
 - Team style profiles
 
-## Exit Criteria
+## 退出标准
 
-A new user can install or copy AIUI, initialize a project, generate a page spec, and use an AI agent to build a better frontend page.
+新用户可以安装或复制 AIUI，初始化项目，生成 page spec，并用 AI agent 构建更好的前端页面。
 

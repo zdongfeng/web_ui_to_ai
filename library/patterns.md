@@ -1,10 +1,10 @@
 # Patterns Library v0.1
 
-Patterns are reusable UI compositions.
+Patterns 是可复用 UI 组合。
 
-They are more important than components because they guide AI page structure.
+它们比 components 更重要，因为它们指导 AI 如何组织页面结构。
 
-## Initial 10 Patterns
+## 初始 10 个 Patterns
 
 1. app-shell
 2. management-list
@@ -17,7 +17,7 @@ They are more important than components because they guide AI page structure.
 9. editor-layout
 10. landing-page
 
-## Pattern Spec Template
+## Pattern Spec 模板
 
 ```yaml
 pattern:
@@ -48,7 +48,7 @@ pattern:
     - "unrelated stats section"
 ```
 
-## Pattern Design Rule
+## Pattern 设计规则
 
-A pattern must explain when it should be used and when it should not be used.
+Pattern 必须说明什么时候应该用，以及什么时候不应该用。
 
